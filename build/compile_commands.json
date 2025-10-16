@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-build",
+  "command": "/usr/bin/cc -DSB_CONFIG_UNITY -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-src/Headers -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-src/Source  -arch arm64 -o CMakeFiles/SheenBidi.dir/Source/SheenBidi.c.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-src/Source/SheenBidi.c",
+  "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-src/Source/SheenBidi.c",
+  "output": "_deps/sheenbidi-build/CMakeFiles/SheenBidi.dir/Source/SheenBidi.c.o"
+}
+]
