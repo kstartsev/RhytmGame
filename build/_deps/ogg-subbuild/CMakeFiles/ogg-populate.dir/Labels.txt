@@ -1,0 +1,14 @@
+# Target labels
+ ogg-populate
+# Source files and their labels
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/ogg-populate
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/ogg-populate.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/ogg-populate-complete.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-build.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-configure.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-download.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-install.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-mkdir.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-patch.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-test.rule
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-update.rule

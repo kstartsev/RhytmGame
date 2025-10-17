@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test.rule"
+		},
+		{
+			"file" : "/Users/kirillstarcev/\u0432\u0441\u044f\u043a\u043e\u0435/coding/\u043e\u043e\u043f/lab3/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sfml-populate"
+		],
+		"name" : "sfml-populate"
+	}
+}

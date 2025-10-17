@@ -1,0 +1,3 @@
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/ogg-populate.dir
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/edit_cache.dir
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-subbuild/CMakeFiles/rebuild_cache.dir
