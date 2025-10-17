@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -156,13 +156,6 @@ all: cmake_check_build_system
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : all
-
-# The main codegen target
-codegen: cmake_check_build_system
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib//CMakeFiles/progress.marks
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/lib/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
-.PHONY : codegen
 
 # The main clean target
 clean:
@@ -230,32 +223,149 @@ vorbisfile/fast:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
 .PHONY : vorbisfile/fast
 
-Unity/unity_0_c.o: Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.o
+analysis.o: analysis.c.o
+.PHONY : analysis.o
 
 # target to build an object file
-Unity/unity_0_c.c.o:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/Unity/unity_0_c.c.o
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.c.o
+analysis.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.o
+.PHONY : analysis.c.o
 
-Unity/unity_0_c.i: Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.i
+analysis.i: analysis.c.i
+.PHONY : analysis.i
 
 # target to preprocess a source file
-Unity/unity_0_c.c.i:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/Unity/unity_0_c.c.i
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.c.i
+analysis.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.i
+.PHONY : analysis.c.i
 
-Unity/unity_0_c.s: Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.s
+analysis.s: analysis.c.s
+.PHONY : analysis.s
 
 # target to generate assembly for a file
-Unity/unity_0_c.c.s:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/Unity/unity_0_c.c.s
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.c.s
+analysis.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.s
+.PHONY : analysis.c.s
+
+bitrate.o: bitrate.c.o
+.PHONY : bitrate.o
+
+# target to build an object file
+bitrate.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.o
+.PHONY : bitrate.c.o
+
+bitrate.i: bitrate.c.i
+.PHONY : bitrate.i
+
+# target to preprocess a source file
+bitrate.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.i
+.PHONY : bitrate.c.i
+
+bitrate.s: bitrate.c.s
+.PHONY : bitrate.s
+
+# target to generate assembly for a file
+bitrate.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.s
+.PHONY : bitrate.c.s
+
+block.o: block.c.o
+.PHONY : block.o
+
+# target to build an object file
+block.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.o
+.PHONY : block.c.o
+
+block.i: block.c.i
+.PHONY : block.i
+
+# target to preprocess a source file
+block.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.i
+.PHONY : block.c.i
+
+block.s: block.c.s
+.PHONY : block.s
+
+# target to generate assembly for a file
+block.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.s
+.PHONY : block.c.s
+
+codebook.o: codebook.c.o
+.PHONY : codebook.o
+
+# target to build an object file
+codebook.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.o
+.PHONY : codebook.c.o
+
+codebook.i: codebook.c.i
+.PHONY : codebook.i
+
+# target to preprocess a source file
+codebook.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.i
+.PHONY : codebook.c.i
+
+codebook.s: codebook.c.s
+.PHONY : codebook.s
+
+# target to generate assembly for a file
+codebook.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.s
+.PHONY : codebook.c.s
+
+envelope.o: envelope.c.o
+.PHONY : envelope.o
+
+# target to build an object file
+envelope.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.o
+.PHONY : envelope.c.o
+
+envelope.i: envelope.c.i
+.PHONY : envelope.i
+
+# target to preprocess a source file
+envelope.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.i
+.PHONY : envelope.c.i
+
+envelope.s: envelope.c.s
+.PHONY : envelope.s
+
+# target to generate assembly for a file
+envelope.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.s
+.PHONY : envelope.c.s
+
+floor0.o: floor0.c.o
+.PHONY : floor0.o
+
+# target to build an object file
+floor0.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.o
+.PHONY : floor0.c.o
+
+floor0.i: floor0.c.i
+.PHONY : floor0.i
+
+# target to preprocess a source file
+floor0.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.i
+.PHONY : floor0.c.i
+
+floor0.s: floor0.c.s
+.PHONY : floor0.s
+
+# target to generate assembly for a file
+floor0.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.s
+.PHONY : floor0.c.s
 
 floor1.o: floor1.c.o
 .PHONY : floor1.o
@@ -281,6 +391,222 @@ floor1.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.s
 .PHONY : floor1.c.s
 
+info.o: info.c.o
+.PHONY : info.o
+
+# target to build an object file
+info.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.o
+.PHONY : info.c.o
+
+info.i: info.c.i
+.PHONY : info.i
+
+# target to preprocess a source file
+info.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.i
+.PHONY : info.c.i
+
+info.s: info.c.s
+.PHONY : info.s
+
+# target to generate assembly for a file
+info.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.s
+.PHONY : info.c.s
+
+lookup.o: lookup.c.o
+.PHONY : lookup.o
+
+# target to build an object file
+lookup.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.o
+.PHONY : lookup.c.o
+
+lookup.i: lookup.c.i
+.PHONY : lookup.i
+
+# target to preprocess a source file
+lookup.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.i
+.PHONY : lookup.c.i
+
+lookup.s: lookup.c.s
+.PHONY : lookup.s
+
+# target to generate assembly for a file
+lookup.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.s
+.PHONY : lookup.c.s
+
+lpc.o: lpc.c.o
+.PHONY : lpc.o
+
+# target to build an object file
+lpc.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.o
+.PHONY : lpc.c.o
+
+lpc.i: lpc.c.i
+.PHONY : lpc.i
+
+# target to preprocess a source file
+lpc.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.i
+.PHONY : lpc.c.i
+
+lpc.s: lpc.c.s
+.PHONY : lpc.s
+
+# target to generate assembly for a file
+lpc.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.s
+.PHONY : lpc.c.s
+
+lsp.o: lsp.c.o
+.PHONY : lsp.o
+
+# target to build an object file
+lsp.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.o
+.PHONY : lsp.c.o
+
+lsp.i: lsp.c.i
+.PHONY : lsp.i
+
+# target to preprocess a source file
+lsp.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.i
+.PHONY : lsp.c.i
+
+lsp.s: lsp.c.s
+.PHONY : lsp.s
+
+# target to generate assembly for a file
+lsp.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.s
+.PHONY : lsp.c.s
+
+mapping0.o: mapping0.c.o
+.PHONY : mapping0.o
+
+# target to build an object file
+mapping0.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.o
+.PHONY : mapping0.c.o
+
+mapping0.i: mapping0.c.i
+.PHONY : mapping0.i
+
+# target to preprocess a source file
+mapping0.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.i
+.PHONY : mapping0.c.i
+
+mapping0.s: mapping0.c.s
+.PHONY : mapping0.s
+
+# target to generate assembly for a file
+mapping0.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.s
+.PHONY : mapping0.c.s
+
+mdct.o: mdct.c.o
+.PHONY : mdct.o
+
+# target to build an object file
+mdct.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.o
+.PHONY : mdct.c.o
+
+mdct.i: mdct.c.i
+.PHONY : mdct.i
+
+# target to preprocess a source file
+mdct.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.i
+.PHONY : mdct.c.i
+
+mdct.s: mdct.c.s
+.PHONY : mdct.s
+
+# target to generate assembly for a file
+mdct.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.s
+.PHONY : mdct.c.s
+
+psy.o: psy.c.o
+.PHONY : psy.o
+
+# target to build an object file
+psy.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.o
+.PHONY : psy.c.o
+
+psy.i: psy.c.i
+.PHONY : psy.i
+
+# target to preprocess a source file
+psy.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.i
+.PHONY : psy.c.i
+
+psy.s: psy.c.s
+.PHONY : psy.s
+
+# target to generate assembly for a file
+psy.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.s
+.PHONY : psy.c.s
+
+registry.o: registry.c.o
+.PHONY : registry.o
+
+# target to build an object file
+registry.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.o
+.PHONY : registry.c.o
+
+registry.i: registry.c.i
+.PHONY : registry.i
+
+# target to preprocess a source file
+registry.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.i
+.PHONY : registry.c.i
+
+registry.s: registry.c.s
+.PHONY : registry.s
+
+# target to generate assembly for a file
+registry.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.s
+.PHONY : registry.c.s
+
+res0.o: res0.c.o
+.PHONY : res0.o
+
+# target to build an object file
+res0.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.o
+.PHONY : res0.c.o
+
+res0.i: res0.c.i
+.PHONY : res0.i
+
+# target to preprocess a source file
+res0.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.i
+.PHONY : res0.c.i
+
+res0.s: res0.c.s
+.PHONY : res0.s
+
+# target to generate assembly for a file
+res0.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.s
+.PHONY : res0.c.s
+
 sharedbook.o: sharedbook.c.o
 .PHONY : sharedbook.o
 
@@ -304,6 +630,54 @@ sharedbook.s: sharedbook.c.s
 sharedbook.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.s
 .PHONY : sharedbook.c.s
+
+smallft.o: smallft.c.o
+.PHONY : smallft.o
+
+# target to build an object file
+smallft.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.o
+.PHONY : smallft.c.o
+
+smallft.i: smallft.c.i
+.PHONY : smallft.i
+
+# target to preprocess a source file
+smallft.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.i
+.PHONY : smallft.c.i
+
+smallft.s: smallft.c.s
+.PHONY : smallft.s
+
+# target to generate assembly for a file
+smallft.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.s
+.PHONY : smallft.c.s
+
+synthesis.o: synthesis.c.o
+.PHONY : synthesis.o
+
+# target to build an object file
+synthesis.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.o
+.PHONY : synthesis.c.o
+
+synthesis.i: synthesis.c.i
+.PHONY : synthesis.i
+
+# target to preprocess a source file
+synthesis.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.i
+.PHONY : synthesis.c.i
+
+synthesis.s: synthesis.c.s
+.PHONY : synthesis.s
+
+# target to generate assembly for a file
+synthesis.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.s
+.PHONY : synthesis.c.s
 
 vorbisenc.o: vorbisenc.c.o
 .PHONY : vorbisenc.o
@@ -329,13 +703,60 @@ vorbisenc.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.s
 .PHONY : vorbisenc.c.s
 
+vorbisfile.o: vorbisfile.c.o
+.PHONY : vorbisfile.o
+
+# target to build an object file
+vorbisfile.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o
+.PHONY : vorbisfile.c.o
+
+vorbisfile.i: vorbisfile.c.i
+.PHONY : vorbisfile.i
+
+# target to preprocess a source file
+vorbisfile.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.i
+.PHONY : vorbisfile.c.i
+
+vorbisfile.s: vorbisfile.c.s
+.PHONY : vorbisfile.s
+
+# target to generate assembly for a file
+vorbisfile.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.s
+.PHONY : vorbisfile.c.s
+
+window.o: window.c.o
+.PHONY : window.o
+
+# target to build an object file
+window.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.o
+.PHONY : window.c.o
+
+window.i: window.c.i
+.PHONY : window.i
+
+# target to preprocess a source file
+window.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.i
+.PHONY : window.c.i
+
+window.s: window.c.s
+.PHONY : window.s
+
+# target to generate assembly for a file
+window.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.s
+.PHONY : window.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -347,18 +768,72 @@ help:
 	@echo "... vorbis"
 	@echo "... vorbisenc"
 	@echo "... vorbisfile"
-	@echo "... Unity/unity_0_c.o"
-	@echo "... Unity/unity_0_c.i"
-	@echo "... Unity/unity_0_c.s"
+	@echo "... analysis.o"
+	@echo "... analysis.i"
+	@echo "... analysis.s"
+	@echo "... bitrate.o"
+	@echo "... bitrate.i"
+	@echo "... bitrate.s"
+	@echo "... block.o"
+	@echo "... block.i"
+	@echo "... block.s"
+	@echo "... codebook.o"
+	@echo "... codebook.i"
+	@echo "... codebook.s"
+	@echo "... envelope.o"
+	@echo "... envelope.i"
+	@echo "... envelope.s"
+	@echo "... floor0.o"
+	@echo "... floor0.i"
+	@echo "... floor0.s"
 	@echo "... floor1.o"
 	@echo "... floor1.i"
 	@echo "... floor1.s"
+	@echo "... info.o"
+	@echo "... info.i"
+	@echo "... info.s"
+	@echo "... lookup.o"
+	@echo "... lookup.i"
+	@echo "... lookup.s"
+	@echo "... lpc.o"
+	@echo "... lpc.i"
+	@echo "... lpc.s"
+	@echo "... lsp.o"
+	@echo "... lsp.i"
+	@echo "... lsp.s"
+	@echo "... mapping0.o"
+	@echo "... mapping0.i"
+	@echo "... mapping0.s"
+	@echo "... mdct.o"
+	@echo "... mdct.i"
+	@echo "... mdct.s"
+	@echo "... psy.o"
+	@echo "... psy.i"
+	@echo "... psy.s"
+	@echo "... registry.o"
+	@echo "... registry.i"
+	@echo "... registry.s"
+	@echo "... res0.o"
+	@echo "... res0.i"
+	@echo "... res0.s"
 	@echo "... sharedbook.o"
 	@echo "... sharedbook.i"
 	@echo "... sharedbook.s"
+	@echo "... smallft.o"
+	@echo "... smallft.i"
+	@echo "... smallft.s"
+	@echo "... synthesis.o"
+	@echo "... synthesis.i"
+	@echo "... synthesis.s"
 	@echo "... vorbisenc.o"
 	@echo "... vorbisenc.i"
 	@echo "... vorbisenc.s"
+	@echo "... vorbisfile.o"
+	@echo "... vorbisfile.i"
+	@echo "... vorbisfile.s"
+	@echo "... window.o"
+	@echo "... window.i"
+	@echo "... window.s"
 .PHONY : help
 
 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../sfml-build/lib/libvorbisfile.a"
   "../../sfml-build/lib/libvorbisfile.pdb"
-  "CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o"
-  "CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o.d"
+  "CMakeFiles/vorbisfile.dir/vorbisfile.c.o"
+  "CMakeFiles/vorbisfile.dir/vorbisfile.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

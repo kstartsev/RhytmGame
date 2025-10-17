@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -157,13 +157,6 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : all
 
-# The main codegen target
-codegen: cmake_check_build_system
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/flac-build/src/libFLAC//CMakeFiles/progress.marks
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/flac-build/src/libFLAC/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
-.PHONY : codegen
-
 # The main clean target
 clean:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/flac-build/src/libFLAC/clean
@@ -202,29 +195,125 @@ FLAC/fast:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build
 .PHONY : FLAC/fast
 
-Unity/unity_0_c.o: Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.o
+bitmath.o: bitmath.c.o
+.PHONY : bitmath.o
 
 # target to build an object file
-Unity/unity_0_c.c.o:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.c.o
+bitmath.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitmath.c.o
+.PHONY : bitmath.c.o
 
-Unity/unity_0_c.i: Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.i
+bitmath.i: bitmath.c.i
+.PHONY : bitmath.i
 
 # target to preprocess a source file
-Unity/unity_0_c.c.i:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.c.i
+bitmath.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitmath.c.i
+.PHONY : bitmath.c.i
 
-Unity/unity_0_c.s: Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.s
+bitmath.s: bitmath.c.s
+.PHONY : bitmath.s
 
 # target to generate assembly for a file
-Unity/unity_0_c.c.s:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.c.s
+bitmath.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitmath.c.s
+.PHONY : bitmath.c.s
+
+bitreader.o: bitreader.c.o
+.PHONY : bitreader.o
+
+# target to build an object file
+bitreader.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitreader.c.o
+.PHONY : bitreader.c.o
+
+bitreader.i: bitreader.c.i
+.PHONY : bitreader.i
+
+# target to preprocess a source file
+bitreader.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitreader.c.i
+.PHONY : bitreader.c.i
+
+bitreader.s: bitreader.c.s
+.PHONY : bitreader.s
+
+# target to generate assembly for a file
+bitreader.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitreader.c.s
+.PHONY : bitreader.c.s
+
+bitwriter.o: bitwriter.c.o
+.PHONY : bitwriter.o
+
+# target to build an object file
+bitwriter.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitwriter.c.o
+.PHONY : bitwriter.c.o
+
+bitwriter.i: bitwriter.c.i
+.PHONY : bitwriter.i
+
+# target to preprocess a source file
+bitwriter.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitwriter.c.i
+.PHONY : bitwriter.c.i
+
+bitwriter.s: bitwriter.c.s
+.PHONY : bitwriter.s
+
+# target to generate assembly for a file
+bitwriter.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/bitwriter.c.s
+.PHONY : bitwriter.c.s
+
+cpu.o: cpu.c.o
+.PHONY : cpu.o
+
+# target to build an object file
+cpu.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/cpu.c.o
+.PHONY : cpu.c.o
+
+cpu.i: cpu.c.i
+.PHONY : cpu.i
+
+# target to preprocess a source file
+cpu.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/cpu.c.i
+.PHONY : cpu.c.i
+
+cpu.s: cpu.c.s
+.PHONY : cpu.s
+
+# target to generate assembly for a file
+cpu.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/cpu.c.s
+.PHONY : cpu.c.s
+
+crc.o: crc.c.o
+.PHONY : crc.o
+
+# target to build an object file
+crc.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/crc.c.o
+.PHONY : crc.c.o
+
+crc.i: crc.c.i
+.PHONY : crc.i
+
+# target to preprocess a source file
+crc.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/crc.c.i
+.PHONY : crc.c.i
+
+crc.s: crc.c.s
+.PHONY : crc.s
+
+# target to generate assembly for a file
+crc.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/crc.c.s
+.PHONY : crc.c.s
 
 fixed.o: fixed.c.o
 .PHONY : fixed.o
@@ -249,6 +338,30 @@ fixed.s: fixed.c.s
 fixed.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/fixed.c.s
 .PHONY : fixed.c.s
+
+fixed_intrin_avx2.o: fixed_intrin_avx2.c.o
+.PHONY : fixed_intrin_avx2.o
+
+# target to build an object file
+fixed_intrin_avx2.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_avx2.c.o
+.PHONY : fixed_intrin_avx2.c.o
+
+fixed_intrin_avx2.i: fixed_intrin_avx2.c.i
+.PHONY : fixed_intrin_avx2.i
+
+# target to preprocess a source file
+fixed_intrin_avx2.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_avx2.c.i
+.PHONY : fixed_intrin_avx2.c.i
+
+fixed_intrin_avx2.s: fixed_intrin_avx2.c.s
+.PHONY : fixed_intrin_avx2.s
+
+# target to generate assembly for a file
+fixed_intrin_avx2.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_avx2.c.s
+.PHONY : fixed_intrin_avx2.c.s
 
 fixed_intrin_sse2.o: fixed_intrin_sse2.c.o
 .PHONY : fixed_intrin_sse2.o
@@ -322,6 +435,30 @@ fixed_intrin_ssse3.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/fixed_intrin_ssse3.c.s
 .PHONY : fixed_intrin_ssse3.c.s
 
+float.o: float.c.o
+.PHONY : float.o
+
+# target to build an object file
+float.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/float.c.o
+.PHONY : float.c.o
+
+float.i: float.c.i
+.PHONY : float.i
+
+# target to preprocess a source file
+float.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/float.c.i
+.PHONY : float.c.i
+
+float.s: float.c.s
+.PHONY : float.s
+
+# target to generate assembly for a file
+float.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/float.c.s
+.PHONY : float.c.s
+
 format.o: format.c.o
 .PHONY : format.o
 
@@ -370,6 +507,198 @@ lpc.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc.c.s
 .PHONY : lpc.c.s
 
+lpc_intrin_avx2.o: lpc_intrin_avx2.c.o
+.PHONY : lpc_intrin_avx2.o
+
+# target to build an object file
+lpc_intrin_avx2.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_avx2.c.o
+.PHONY : lpc_intrin_avx2.c.o
+
+lpc_intrin_avx2.i: lpc_intrin_avx2.c.i
+.PHONY : lpc_intrin_avx2.i
+
+# target to preprocess a source file
+lpc_intrin_avx2.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_avx2.c.i
+.PHONY : lpc_intrin_avx2.c.i
+
+lpc_intrin_avx2.s: lpc_intrin_avx2.c.s
+.PHONY : lpc_intrin_avx2.s
+
+# target to generate assembly for a file
+lpc_intrin_avx2.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_avx2.c.s
+.PHONY : lpc_intrin_avx2.c.s
+
+lpc_intrin_fma.o: lpc_intrin_fma.c.o
+.PHONY : lpc_intrin_fma.o
+
+# target to build an object file
+lpc_intrin_fma.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_fma.c.o
+.PHONY : lpc_intrin_fma.c.o
+
+lpc_intrin_fma.i: lpc_intrin_fma.c.i
+.PHONY : lpc_intrin_fma.i
+
+# target to preprocess a source file
+lpc_intrin_fma.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_fma.c.i
+.PHONY : lpc_intrin_fma.c.i
+
+lpc_intrin_fma.s: lpc_intrin_fma.c.s
+.PHONY : lpc_intrin_fma.s
+
+# target to generate assembly for a file
+lpc_intrin_fma.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_fma.c.s
+.PHONY : lpc_intrin_fma.c.s
+
+lpc_intrin_neon.o: lpc_intrin_neon.c.o
+.PHONY : lpc_intrin_neon.o
+
+# target to build an object file
+lpc_intrin_neon.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_neon.c.o
+.PHONY : lpc_intrin_neon.c.o
+
+lpc_intrin_neon.i: lpc_intrin_neon.c.i
+.PHONY : lpc_intrin_neon.i
+
+# target to preprocess a source file
+lpc_intrin_neon.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_neon.c.i
+.PHONY : lpc_intrin_neon.c.i
+
+lpc_intrin_neon.s: lpc_intrin_neon.c.s
+.PHONY : lpc_intrin_neon.s
+
+# target to generate assembly for a file
+lpc_intrin_neon.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_neon.c.s
+.PHONY : lpc_intrin_neon.c.s
+
+lpc_intrin_sse2.o: lpc_intrin_sse2.c.o
+.PHONY : lpc_intrin_sse2.o
+
+# target to build an object file
+lpc_intrin_sse2.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse2.c.o
+.PHONY : lpc_intrin_sse2.c.o
+
+lpc_intrin_sse2.i: lpc_intrin_sse2.c.i
+.PHONY : lpc_intrin_sse2.i
+
+# target to preprocess a source file
+lpc_intrin_sse2.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse2.c.i
+.PHONY : lpc_intrin_sse2.c.i
+
+lpc_intrin_sse2.s: lpc_intrin_sse2.c.s
+.PHONY : lpc_intrin_sse2.s
+
+# target to generate assembly for a file
+lpc_intrin_sse2.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse2.c.s
+.PHONY : lpc_intrin_sse2.c.s
+
+lpc_intrin_sse41.o: lpc_intrin_sse41.c.o
+.PHONY : lpc_intrin_sse41.o
+
+# target to build an object file
+lpc_intrin_sse41.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse41.c.o
+.PHONY : lpc_intrin_sse41.c.o
+
+lpc_intrin_sse41.i: lpc_intrin_sse41.c.i
+.PHONY : lpc_intrin_sse41.i
+
+# target to preprocess a source file
+lpc_intrin_sse41.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse41.c.i
+.PHONY : lpc_intrin_sse41.c.i
+
+lpc_intrin_sse41.s: lpc_intrin_sse41.c.s
+.PHONY : lpc_intrin_sse41.s
+
+# target to generate assembly for a file
+lpc_intrin_sse41.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/lpc_intrin_sse41.c.s
+.PHONY : lpc_intrin_sse41.c.s
+
+md5.o: md5.c.o
+.PHONY : md5.o
+
+# target to build an object file
+md5.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/md5.c.o
+.PHONY : md5.c.o
+
+md5.i: md5.c.i
+.PHONY : md5.i
+
+# target to preprocess a source file
+md5.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/md5.c.i
+.PHONY : md5.c.i
+
+md5.s: md5.c.s
+.PHONY : md5.s
+
+# target to generate assembly for a file
+md5.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/md5.c.s
+.PHONY : md5.c.s
+
+memory.o: memory.c.o
+.PHONY : memory.o
+
+# target to build an object file
+memory.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/memory.c.o
+.PHONY : memory.c.o
+
+memory.i: memory.c.i
+.PHONY : memory.i
+
+# target to preprocess a source file
+memory.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/memory.c.i
+.PHONY : memory.c.i
+
+memory.s: memory.c.s
+.PHONY : memory.s
+
+# target to generate assembly for a file
+memory.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/memory.c.s
+.PHONY : memory.c.s
+
+metadata_iterators.o: metadata_iterators.c.o
+.PHONY : metadata_iterators.o
+
+# target to build an object file
+metadata_iterators.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/metadata_iterators.c.o
+.PHONY : metadata_iterators.c.o
+
+metadata_iterators.i: metadata_iterators.c.i
+.PHONY : metadata_iterators.i
+
+# target to preprocess a source file
+metadata_iterators.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/metadata_iterators.c.i
+.PHONY : metadata_iterators.c.i
+
+metadata_iterators.s: metadata_iterators.c.s
+.PHONY : metadata_iterators.s
+
+# target to generate assembly for a file
+metadata_iterators.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/metadata_iterators.c.s
+.PHONY : metadata_iterators.c.s
+
 metadata_object.o: metadata_object.c.o
 .PHONY : metadata_object.o
 
@@ -393,6 +722,102 @@ metadata_object.s: metadata_object.c.s
 metadata_object.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/metadata_object.c.s
 .PHONY : metadata_object.c.s
+
+ogg_decoder_aspect.o: ogg_decoder_aspect.c.o
+.PHONY : ogg_decoder_aspect.o
+
+# target to build an object file
+ogg_decoder_aspect.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_decoder_aspect.c.o
+.PHONY : ogg_decoder_aspect.c.o
+
+ogg_decoder_aspect.i: ogg_decoder_aspect.c.i
+.PHONY : ogg_decoder_aspect.i
+
+# target to preprocess a source file
+ogg_decoder_aspect.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_decoder_aspect.c.i
+.PHONY : ogg_decoder_aspect.c.i
+
+ogg_decoder_aspect.s: ogg_decoder_aspect.c.s
+.PHONY : ogg_decoder_aspect.s
+
+# target to generate assembly for a file
+ogg_decoder_aspect.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_decoder_aspect.c.s
+.PHONY : ogg_decoder_aspect.c.s
+
+ogg_encoder_aspect.o: ogg_encoder_aspect.c.o
+.PHONY : ogg_encoder_aspect.o
+
+# target to build an object file
+ogg_encoder_aspect.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_encoder_aspect.c.o
+.PHONY : ogg_encoder_aspect.c.o
+
+ogg_encoder_aspect.i: ogg_encoder_aspect.c.i
+.PHONY : ogg_encoder_aspect.i
+
+# target to preprocess a source file
+ogg_encoder_aspect.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_encoder_aspect.c.i
+.PHONY : ogg_encoder_aspect.c.i
+
+ogg_encoder_aspect.s: ogg_encoder_aspect.c.s
+.PHONY : ogg_encoder_aspect.s
+
+# target to generate assembly for a file
+ogg_encoder_aspect.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_encoder_aspect.c.s
+.PHONY : ogg_encoder_aspect.c.s
+
+ogg_helper.o: ogg_helper.c.o
+.PHONY : ogg_helper.o
+
+# target to build an object file
+ogg_helper.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_helper.c.o
+.PHONY : ogg_helper.c.o
+
+ogg_helper.i: ogg_helper.c.i
+.PHONY : ogg_helper.i
+
+# target to preprocess a source file
+ogg_helper.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_helper.c.i
+.PHONY : ogg_helper.c.i
+
+ogg_helper.s: ogg_helper.c.s
+.PHONY : ogg_helper.s
+
+# target to generate assembly for a file
+ogg_helper.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_helper.c.s
+.PHONY : ogg_helper.c.s
+
+ogg_mapping.o: ogg_mapping.c.o
+.PHONY : ogg_mapping.o
+
+# target to build an object file
+ogg_mapping.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_mapping.c.o
+.PHONY : ogg_mapping.c.o
+
+ogg_mapping.i: ogg_mapping.c.i
+.PHONY : ogg_mapping.i
+
+# target to preprocess a source file
+ogg_mapping.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_mapping.c.i
+.PHONY : ogg_mapping.c.i
+
+ogg_mapping.s: ogg_mapping.c.s
+.PHONY : ogg_mapping.s
+
+# target to generate assembly for a file
+ogg_mapping.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/ogg_mapping.c.s
+.PHONY : ogg_mapping.c.s
 
 stream_decoder.o: stream_decoder.c.o
 .PHONY : stream_decoder.o
@@ -442,6 +867,102 @@ stream_encoder.c.s:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder.c.s
 .PHONY : stream_encoder.c.s
 
+stream_encoder_framing.o: stream_encoder_framing.c.o
+.PHONY : stream_encoder_framing.o
+
+# target to build an object file
+stream_encoder_framing.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_framing.c.o
+.PHONY : stream_encoder_framing.c.o
+
+stream_encoder_framing.i: stream_encoder_framing.c.i
+.PHONY : stream_encoder_framing.i
+
+# target to preprocess a source file
+stream_encoder_framing.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_framing.c.i
+.PHONY : stream_encoder_framing.c.i
+
+stream_encoder_framing.s: stream_encoder_framing.c.s
+.PHONY : stream_encoder_framing.s
+
+# target to generate assembly for a file
+stream_encoder_framing.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_framing.c.s
+.PHONY : stream_encoder_framing.c.s
+
+stream_encoder_intrin_avx2.o: stream_encoder_intrin_avx2.c.o
+.PHONY : stream_encoder_intrin_avx2.o
+
+# target to build an object file
+stream_encoder_intrin_avx2.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_avx2.c.o
+.PHONY : stream_encoder_intrin_avx2.c.o
+
+stream_encoder_intrin_avx2.i: stream_encoder_intrin_avx2.c.i
+.PHONY : stream_encoder_intrin_avx2.i
+
+# target to preprocess a source file
+stream_encoder_intrin_avx2.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_avx2.c.i
+.PHONY : stream_encoder_intrin_avx2.c.i
+
+stream_encoder_intrin_avx2.s: stream_encoder_intrin_avx2.c.s
+.PHONY : stream_encoder_intrin_avx2.s
+
+# target to generate assembly for a file
+stream_encoder_intrin_avx2.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_avx2.c.s
+.PHONY : stream_encoder_intrin_avx2.c.s
+
+stream_encoder_intrin_sse2.o: stream_encoder_intrin_sse2.c.o
+.PHONY : stream_encoder_intrin_sse2.o
+
+# target to build an object file
+stream_encoder_intrin_sse2.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_sse2.c.o
+.PHONY : stream_encoder_intrin_sse2.c.o
+
+stream_encoder_intrin_sse2.i: stream_encoder_intrin_sse2.c.i
+.PHONY : stream_encoder_intrin_sse2.i
+
+# target to preprocess a source file
+stream_encoder_intrin_sse2.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_sse2.c.i
+.PHONY : stream_encoder_intrin_sse2.c.i
+
+stream_encoder_intrin_sse2.s: stream_encoder_intrin_sse2.c.s
+.PHONY : stream_encoder_intrin_sse2.s
+
+# target to generate assembly for a file
+stream_encoder_intrin_sse2.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_sse2.c.s
+.PHONY : stream_encoder_intrin_sse2.c.s
+
+stream_encoder_intrin_ssse3.o: stream_encoder_intrin_ssse3.c.o
+.PHONY : stream_encoder_intrin_ssse3.o
+
+# target to build an object file
+stream_encoder_intrin_ssse3.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_ssse3.c.o
+.PHONY : stream_encoder_intrin_ssse3.c.o
+
+stream_encoder_intrin_ssse3.i: stream_encoder_intrin_ssse3.c.i
+.PHONY : stream_encoder_intrin_ssse3.i
+
+# target to preprocess a source file
+stream_encoder_intrin_ssse3.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_ssse3.c.i
+.PHONY : stream_encoder_intrin_ssse3.c.i
+
+stream_encoder_intrin_ssse3.s: stream_encoder_intrin_ssse3.c.s
+.PHONY : stream_encoder_intrin_ssse3.s
+
+# target to generate assembly for a file
+stream_encoder_intrin_ssse3.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/stream_encoder_intrin_ssse3.c.s
+.PHONY : stream_encoder_intrin_ssse3.c.s
+
 window.o: window.c.o
 .PHONY : window.o
 
@@ -472,7 +993,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -482,12 +1002,27 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... FLAC"
-	@echo "... Unity/unity_0_c.o"
-	@echo "... Unity/unity_0_c.i"
-	@echo "... Unity/unity_0_c.s"
+	@echo "... bitmath.o"
+	@echo "... bitmath.i"
+	@echo "... bitmath.s"
+	@echo "... bitreader.o"
+	@echo "... bitreader.i"
+	@echo "... bitreader.s"
+	@echo "... bitwriter.o"
+	@echo "... bitwriter.i"
+	@echo "... bitwriter.s"
+	@echo "... cpu.o"
+	@echo "... cpu.i"
+	@echo "... cpu.s"
+	@echo "... crc.o"
+	@echo "... crc.i"
+	@echo "... crc.s"
 	@echo "... fixed.o"
 	@echo "... fixed.i"
 	@echo "... fixed.s"
+	@echo "... fixed_intrin_avx2.o"
+	@echo "... fixed_intrin_avx2.i"
+	@echo "... fixed_intrin_avx2.s"
 	@echo "... fixed_intrin_sse2.o"
 	@echo "... fixed_intrin_sse2.i"
 	@echo "... fixed_intrin_sse2.s"
@@ -497,21 +1032,72 @@ help:
 	@echo "... fixed_intrin_ssse3.o"
 	@echo "... fixed_intrin_ssse3.i"
 	@echo "... fixed_intrin_ssse3.s"
+	@echo "... float.o"
+	@echo "... float.i"
+	@echo "... float.s"
 	@echo "... format.o"
 	@echo "... format.i"
 	@echo "... format.s"
 	@echo "... lpc.o"
 	@echo "... lpc.i"
 	@echo "... lpc.s"
+	@echo "... lpc_intrin_avx2.o"
+	@echo "... lpc_intrin_avx2.i"
+	@echo "... lpc_intrin_avx2.s"
+	@echo "... lpc_intrin_fma.o"
+	@echo "... lpc_intrin_fma.i"
+	@echo "... lpc_intrin_fma.s"
+	@echo "... lpc_intrin_neon.o"
+	@echo "... lpc_intrin_neon.i"
+	@echo "... lpc_intrin_neon.s"
+	@echo "... lpc_intrin_sse2.o"
+	@echo "... lpc_intrin_sse2.i"
+	@echo "... lpc_intrin_sse2.s"
+	@echo "... lpc_intrin_sse41.o"
+	@echo "... lpc_intrin_sse41.i"
+	@echo "... lpc_intrin_sse41.s"
+	@echo "... md5.o"
+	@echo "... md5.i"
+	@echo "... md5.s"
+	@echo "... memory.o"
+	@echo "... memory.i"
+	@echo "... memory.s"
+	@echo "... metadata_iterators.o"
+	@echo "... metadata_iterators.i"
+	@echo "... metadata_iterators.s"
 	@echo "... metadata_object.o"
 	@echo "... metadata_object.i"
 	@echo "... metadata_object.s"
+	@echo "... ogg_decoder_aspect.o"
+	@echo "... ogg_decoder_aspect.i"
+	@echo "... ogg_decoder_aspect.s"
+	@echo "... ogg_encoder_aspect.o"
+	@echo "... ogg_encoder_aspect.i"
+	@echo "... ogg_encoder_aspect.s"
+	@echo "... ogg_helper.o"
+	@echo "... ogg_helper.i"
+	@echo "... ogg_helper.s"
+	@echo "... ogg_mapping.o"
+	@echo "... ogg_mapping.i"
+	@echo "... ogg_mapping.s"
 	@echo "... stream_decoder.o"
 	@echo "... stream_decoder.i"
 	@echo "... stream_decoder.s"
 	@echo "... stream_encoder.o"
 	@echo "... stream_encoder.i"
 	@echo "... stream_encoder.s"
+	@echo "... stream_encoder_framing.o"
+	@echo "... stream_encoder_framing.i"
+	@echo "... stream_encoder_framing.s"
+	@echo "... stream_encoder_intrin_avx2.o"
+	@echo "... stream_encoder_intrin_avx2.i"
+	@echo "... stream_encoder_intrin_avx2.s"
+	@echo "... stream_encoder_intrin_sse2.o"
+	@echo "... stream_encoder_intrin_sse2.i"
+	@echo "... stream_encoder_intrin_sse2.s"
+	@echo "... stream_encoder_intrin_ssse3.o"
+	@echo "... stream_encoder_intrin_ssse3.i"
+	@echo "... stream_encoder_intrin_ssse3.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"

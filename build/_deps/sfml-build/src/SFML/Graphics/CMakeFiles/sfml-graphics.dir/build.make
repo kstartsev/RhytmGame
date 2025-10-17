@@ -481,8 +481,7 @@ sfml__graphics_OBJECTS = \
 "CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o"
 
 # External object files for target sfml-graphics
-sfml__graphics_EXTERNAL_OBJECTS = \
-"/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-build/CMakeFiles/SheenBidi.dir/Source/SheenBidi.c.o"
+sfml__graphics_EXTERNAL_OBJECTS =
 
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.o
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o
@@ -511,7 +510,6 @@ _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMak
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.o
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.o
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o
-_deps/sfml-build/lib/libsfml-graphics.a: _deps/sheenbidi-build/CMakeFiles/SheenBidi.dir/Source/SheenBidi.c.o
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make
 _deps/sfml-build/lib/libsfml-graphics.a: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX static library ../../../lib/libsfml-graphics.a"

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DFT2_BUILD_LIBRARY
 
-C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include/freetype/config -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/harfbuzz-src/src
+C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include/freetype/config
 
 C_FLAGSarm64 =  -arch arm64 -fvisibility=hidden
 

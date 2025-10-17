@@ -77,6 +77,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/flac-build/src/cmake_install.cmake")
+  include("/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/flac-build/microbench/cmake_install.cmake")
 
 endif()
 

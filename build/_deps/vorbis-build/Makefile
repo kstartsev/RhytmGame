@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -157,13 +157,6 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : all
 
-# The main codegen target
-codegen: cmake_check_build_system
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build//CMakeFiles/progress.marks
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
-.PHONY : codegen
-
 # The main clean target
 clean:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/clean
@@ -194,7 +187,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"

@@ -72,28 +72,28 @@ include _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/flags.make
 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/codegen:
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/codegen
 
-_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/flags.make
-_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c
-_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o -MF CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o.d -o CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c
+_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/flags.make
+_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o: _deps/vorbis-src/lib/vorbisfile.c
+_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o"
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o -MF CMakeFiles/vorbisfile.dir/vorbisfile.c.o.d -o CMakeFiles/vorbisfile.dir/vorbisfile.c.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisfile.c
 
-_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.i"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c > CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.i
+_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vorbisfile.dir/vorbisfile.c.i"
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisfile.c > CMakeFiles/vorbisfile.dir/vorbisfile.c.i
 
-_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.s"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c -o CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.s
+_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vorbisfile.dir/vorbisfile.c.s"
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisfile.c -o CMakeFiles/vorbisfile.dir/vorbisfile.c.s
 
 # Object files for target vorbisfile
 vorbisfile_OBJECTS = \
-"CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o"
+"CMakeFiles/vorbisfile.dir/vorbisfile.c.o"
 
 # External object files for target vorbisfile
 vorbisfile_EXTERNAL_OBJECTS =
 
-_deps/sfml-build/lib/libvorbisfile.a: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/Unity/unity_0_c.c.o
+_deps/sfml-build/lib/libvorbisfile.a: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o
 _deps/sfml-build/lib/libvorbisfile.a: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make
 _deps/sfml-build/lib/libvorbisfile.a: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../sfml-build/lib/libvorbisfile.a"

@@ -6,7 +6,7 @@
 # compile OBJCXX with /usr/bin/clang++
 CXX_DEFINES = -DSFML_STATIC
 
-CXX_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -Wsuggest-override -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 
@@ -14,7 +14,7 @@ CXX_FLAGS = -std=gnu++20 -arch arm64 -fvisibility=hidden -fvisibility-inlines-hi
 
 OBJC_DEFINES = -DSFML_STATIC
 
-OBJC_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+OBJC_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 OBJC_FLAGSarm64 = -std=gnu17 -arch arm64 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -Wsuggest-override -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 
@@ -22,7 +22,7 @@ OBJC_FLAGS = -std=gnu17 -arch arm64 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -W
 
 OBJCXX_DEFINES = -DSFML_STATIC
 
-OBJCXX_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+OBJCXX_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/src -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/glad/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/extlibs/headers/vulkan -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 OBJCXX_FLAGSarm64 = -std=gnu++2a -arch arm64 -fvisibility-inlines-hidden -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wimplicit-fallthrough -Wsuggest-override -Wnull-dereference -Wold-style-cast -Wpedantic -Wno-unknown-warning-option
 

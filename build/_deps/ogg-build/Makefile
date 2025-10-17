@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -157,13 +157,6 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : all
 
-# The main codegen target
-codegen: cmake_check_build_system
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-build//CMakeFiles/progress.marks
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ogg-build/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
-.PHONY : codegen
-
 # The main clean target
 clean:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ogg-build/clean
@@ -202,29 +195,53 @@ ogg/fast:
 	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/build
 .PHONY : ogg/fast
 
-Unity/unity_0_c.o: Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.o
+src/bitwise.o: src/bitwise.c.o
+.PHONY : src/bitwise.o
 
 # target to build an object file
-Unity/unity_0_c.c.o:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/Unity/unity_0_c.c.o
-.PHONY : Unity/unity_0_c.c.o
+src/bitwise.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/bitwise.c.o
+.PHONY : src/bitwise.c.o
 
-Unity/unity_0_c.i: Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.i
+src/bitwise.i: src/bitwise.c.i
+.PHONY : src/bitwise.i
 
 # target to preprocess a source file
-Unity/unity_0_c.c.i:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/Unity/unity_0_c.c.i
-.PHONY : Unity/unity_0_c.c.i
+src/bitwise.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/bitwise.c.i
+.PHONY : src/bitwise.c.i
 
-Unity/unity_0_c.s: Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.s
+src/bitwise.s: src/bitwise.c.s
+.PHONY : src/bitwise.s
 
 # target to generate assembly for a file
-Unity/unity_0_c.c.s:
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/Unity/unity_0_c.c.s
-.PHONY : Unity/unity_0_c.c.s
+src/bitwise.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/bitwise.c.s
+.PHONY : src/bitwise.c.s
+
+src/framing.o: src/framing.c.o
+.PHONY : src/framing.o
+
+# target to build an object file
+src/framing.c.o:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/framing.c.o
+.PHONY : src/framing.c.o
+
+src/framing.i: src/framing.c.i
+.PHONY : src/framing.i
+
+# target to preprocess a source file
+src/framing.c.i:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/framing.c.i
+.PHONY : src/framing.c.i
+
+src/framing.s: src/framing.c.s
+.PHONY : src/framing.s
+
+# target to generate assembly for a file
+src/framing.c.s:
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build && $(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/src/framing.c.s
+.PHONY : src/framing.c.s
 
 # Help Target
 help:
@@ -232,7 +249,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -242,9 +258,12 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... ogg"
-	@echo "... Unity/unity_0_c.o"
-	@echo "... Unity/unity_0_c.i"
-	@echo "... Unity/unity_0_c.s"
+	@echo "... src/bitwise.o"
+	@echo "... src/bitwise.i"
+	@echo "... src/bitwise.s"
+	@echo "... src/framing.o"
+	@echo "... src/framing.i"
+	@echo "... src/framing.s"
 .PHONY : help
 
 

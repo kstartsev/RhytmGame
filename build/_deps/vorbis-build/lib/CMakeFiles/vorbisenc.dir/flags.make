@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-build/include
+C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-src/include -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-build/include
 
 C_FLAGSarm64 =  -arch arm64
 

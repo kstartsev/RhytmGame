@@ -14,7 +14,7 @@
 # example:
 #   find_package(SFML COMPONENTS ...)     # no specific version required
 #   find_package(SFML 3 COMPONENTS ...)   # any 3.x version
-#   find_package(SFML 3.0.1 COMPONENTS ...) # version 3.0.1 or greater with the same major version
+#   find_package(SFML 3.0.2 COMPONENTS ...) # version 3.0.2 or greater with the same major version
 #
 # By default, the dynamic libraries of SFML will be found. To find the static ones instead,
 # you must set the SFML_STATIC_LIBRARIES variable to ON before calling find_package(SFML ...).
@@ -178,7 +178,7 @@ foreach(component ${FIND_SFML_COMPONENTS_SORTED})
 endforeach()
 
 if(SFML_FOUND)
-    set(SFML_VERSION_IS_RELEASE OFF)
+    set(SFML_VERSION_IS_RELEASE ON)
 else()
     if(SFML_FIND_REQUIRED)
         # fatal error
@@ -190,5 +190,5 @@ else()
 endif()
 
 if(SFML_FOUND AND NOT SFML_FIND_QUIETLY)
-    message(STATUS "Found SFML 3.1.0 in ${CMAKE_CURRENT_LIST_DIR}")
+    message(STATUS "Found SFML 3.0.2 in ${CMAKE_CURRENT_LIST_DIR}")
 endif()
