@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Game.cpp" "CMakeFiles/game.dir/src/core/Game.cpp.o" "gcc" "CMakeFiles/game.dir/src/core/Game.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"
   )
 

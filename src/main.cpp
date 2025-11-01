@@ -10,8 +10,8 @@ int main()
     sf::RenderWindow window(sf::VideoMode({1920, 1200}), "RhytmGame", sf::Style::Default, sf::State::Windowed, settings);
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
+    window.setView(window.getDefaultView());
     Game game(window);
     game.run();
     return 0;
 }
-`

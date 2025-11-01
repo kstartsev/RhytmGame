@@ -350,6 +350,30 @@ vorbisfile/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
 .PHONY : vorbisfile/fast
 
+src/core/Game.o: src/core/Game.cpp.o
+.PHONY : src/core/Game.o
+
+# target to build an object file
+src/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.o
+.PHONY : src/core/Game.cpp.o
+
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
+
+# target to preprocess a source file
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
+
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
+
+# target to generate assembly for a file
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -401,6 +425,9 @@ help:
 	@echo "... vorbis"
 	@echo "... vorbisenc"
 	@echo "... vorbisfile"
+	@echo "... src/core/Game.o"
+	@echo "... src/core/Game.i"
+	@echo "... src/core/Game.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

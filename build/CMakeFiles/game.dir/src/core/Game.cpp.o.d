@@ -1,5 +1,5 @@
-CMakeFiles/game.dir/src/main.cpp.o: \
-  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/main.cpp \
+CMakeFiles/game.dir/src/core/Game.cpp.o: \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Game.cpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Game.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Graphics.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
