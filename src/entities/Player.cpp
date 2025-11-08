@@ -1,31 +1,29 @@
 #include "Player.hpp"
 
-Player::Player(sf::Vector2f pos, sf::Texture texture, PositionState state) : Entity(pos), texture(texture), state(state)
+Player::Player() : Entity({250.f, 650.f}, PositionState::Down)
 {
-    player_shape.setColor(sf::Color::White); /// позже загрузка текстуры
-    if (state == PositionState::Down)
-    {
-        player_shape.setPosition({250.f, 650.f});
-    }
-    else
-    {
-        player_shape.setPosition({250.f, 150.f});
-    }
+  shape.setSize({100.f, 100.f});
+  shape.setFillColor(sf::Color::White); /// позже загрузка текстуры
+  shape.setPosition(position);
+  state = PositionState::Down;
 }
+
+void Player::draw(sf::RenderTarget &target) const { target.draw(shape); }
 
 void Player::jump()
 {
-    if (state == PositionState::Down)
-    {
-        player_shape.move({0.f, -500.f});
-    }
-    else
-    {
-        player_shape.move({0.f, 500.f});
-    }
+  if (state == PositionState::Down)
+  {
+    shape.move({0.f, -500.f});
+    state = PositionState::Up;
+  }
+  else
+  {
+    shape.move({0.f, 500.f});
+    state = PositionState::Down;
+  }
 }
 
-sf::FloatRect Player::getHitbox()
-{
-    return player_shape.getGlobalBounds();
-}
+void Player::update(float dt) {}
+
+sf::FloatRect Player::getHitbox() const { return shape.getGlobalBounds(); }

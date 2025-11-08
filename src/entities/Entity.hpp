@@ -1,12 +1,22 @@
+#pragma once
+
 #include <SFML/Graphics.hpp>
+
+enum class PositionState
+{
+  Up,
+  Down
+};
 
 class Entity
 {
-private:
-    sf::Vector2f position = {0, 0};
+protected:
+  PositionState state = PositionState::Down;
+  sf::Vector2f position = {0, 0};
 
 public:
-    virtual Entity(sf::Vector2f pos) : position(pos) {};
-    virtual ~Entity() = default;
-    virtual void update();
+  Entity(sf::Vector2f pos, PositionState state) : position(pos), state(state) {};
+  virtual ~Entity() = default;
+  virtual void draw(sf::RenderTarget &target) const = 0;
+  virtual void update(float dt) = 0;
 };

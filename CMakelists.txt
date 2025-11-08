@@ -17,6 +17,12 @@ FetchContent_MakeAvailable(SFML)
 add_executable(game
     src/main.cpp
     src/core/Game.cpp
+    src/entities/Player.cpp
+    src/entities/Entity.cpp
+    src/entities/Obstacle.cpp
+    src/core/Context.cpp
+    src/utils/Utils.cpp
+    src/core/Scene.cpp
 )
 
 target_compile_features(game PRIVATE cxx_std_20)

@@ -350,6 +350,30 @@ vorbisfile/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
 .PHONY : vorbisfile/fast
 
+src/core/Context.o: src/core/Context.cpp.o
+.PHONY : src/core/Context.o
+
+# target to build an object file
+src/core/Context.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.o
+.PHONY : src/core/Context.cpp.o
+
+src/core/Context.i: src/core/Context.cpp.i
+.PHONY : src/core/Context.i
+
+# target to preprocess a source file
+src/core/Context.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.i
+.PHONY : src/core/Context.cpp.i
+
+src/core/Context.s: src/core/Context.cpp.s
+.PHONY : src/core/Context.s
+
+# target to generate assembly for a file
+src/core/Context.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.s
+.PHONY : src/core/Context.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -374,6 +398,102 @@ src/core/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.s
 .PHONY : src/core/Game.cpp.s
 
+src/core/Scene.o: src/core/Scene.cpp.o
+.PHONY : src/core/Scene.o
+
+# target to build an object file
+src/core/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.o
+.PHONY : src/core/Scene.cpp.o
+
+src/core/Scene.i: src/core/Scene.cpp.i
+.PHONY : src/core/Scene.i
+
+# target to preprocess a source file
+src/core/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.i
+.PHONY : src/core/Scene.cpp.i
+
+src/core/Scene.s: src/core/Scene.cpp.s
+.PHONY : src/core/Scene.s
+
+# target to generate assembly for a file
+src/core/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.s
+.PHONY : src/core/Scene.cpp.s
+
+src/entities/Entity.o: src/entities/Entity.cpp.o
+.PHONY : src/entities/Entity.o
+
+# target to build an object file
+src/entities/Entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.o
+.PHONY : src/entities/Entity.cpp.o
+
+src/entities/Entity.i: src/entities/Entity.cpp.i
+.PHONY : src/entities/Entity.i
+
+# target to preprocess a source file
+src/entities/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.i
+.PHONY : src/entities/Entity.cpp.i
+
+src/entities/Entity.s: src/entities/Entity.cpp.s
+.PHONY : src/entities/Entity.s
+
+# target to generate assembly for a file
+src/entities/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.s
+.PHONY : src/entities/Entity.cpp.s
+
+src/entities/Obstacle.o: src/entities/Obstacle.cpp.o
+.PHONY : src/entities/Obstacle.o
+
+# target to build an object file
+src/entities/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.o
+.PHONY : src/entities/Obstacle.cpp.o
+
+src/entities/Obstacle.i: src/entities/Obstacle.cpp.i
+.PHONY : src/entities/Obstacle.i
+
+# target to preprocess a source file
+src/entities/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.i
+.PHONY : src/entities/Obstacle.cpp.i
+
+src/entities/Obstacle.s: src/entities/Obstacle.cpp.s
+.PHONY : src/entities/Obstacle.s
+
+# target to generate assembly for a file
+src/entities/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.s
+.PHONY : src/entities/Obstacle.cpp.s
+
+src/entities/Player.o: src/entities/Player.cpp.o
+.PHONY : src/entities/Player.o
+
+# target to build an object file
+src/entities/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.o
+.PHONY : src/entities/Player.cpp.o
+
+src/entities/Player.i: src/entities/Player.cpp.i
+.PHONY : src/entities/Player.i
+
+# target to preprocess a source file
+src/entities/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.i
+.PHONY : src/entities/Player.cpp.i
+
+src/entities/Player.s: src/entities/Player.cpp.s
+.PHONY : src/entities/Player.s
+
+# target to generate assembly for a file
+src/entities/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.s
+.PHONY : src/entities/Player.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -397,6 +517,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/utils/Utils.o: src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.o
+
+# target to build an object file
+src/utils/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.cpp.o
+
+src/utils/Utils.i: src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.i
+
+# target to preprocess a source file
+src/utils/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.cpp.i
+
+src/utils/Utils.s: src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.s
+
+# target to generate assembly for a file
+src/utils/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.cpp.s
 
 # Help Target
 help:
@@ -425,12 +569,30 @@ help:
 	@echo "... vorbis"
 	@echo "... vorbisenc"
 	@echo "... vorbisfile"
+	@echo "... src/core/Context.o"
+	@echo "... src/core/Context.i"
+	@echo "... src/core/Context.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"
+	@echo "... src/core/Scene.o"
+	@echo "... src/core/Scene.i"
+	@echo "... src/core/Scene.s"
+	@echo "... src/entities/Entity.o"
+	@echo "... src/entities/Entity.i"
+	@echo "... src/entities/Entity.s"
+	@echo "... src/entities/Obstacle.o"
+	@echo "... src/entities/Obstacle.i"
+	@echo "... src/entities/Obstacle.s"
+	@echo "... src/entities/Player.o"
+	@echo "... src/entities/Player.i"
+	@echo "... src/entities/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/utils/Utils.o"
+	@echo "... src/utils/Utils.i"
+	@echo "... src/utils/Utils.s"
 .PHONY : help
 
 

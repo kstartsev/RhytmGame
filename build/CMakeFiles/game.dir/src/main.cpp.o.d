@@ -1092,4 +1092,5 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
-  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp

@@ -17,12 +17,6 @@
 //Build Framework bundle for OSX
 BUILD_FRAMEWORK:BOOL=OFF
 
-//Build the Unicode data generator tool
-BUILD_GENERATOR:BOOL=OFF
-
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -30,13 +24,13 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build (Debug or Release)
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -53,8 +47,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -89,8 +83,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/pkgRedirects
@@ -325,13 +319,6 @@ CMAKE_TAPI:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
-
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
-
 //Enable to build OSX bundles
 CPACK_BINARY_BUNDLE:BOOL=OFF
 
@@ -386,27 +373,9 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
-
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
-
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
-
 //Set FLAC__BYTES_PER_WORD to 8, for 64-bit machines. For 32-bit
 // machines, turning this off might give a tiny speed improvement
 ENABLE_64_BIT_WORDS:BOOL=ON
-
-//Enable address sanitizer
-ENABLE_ASAN:BOOL=OFF
-
-//Enable code coverage instrumentation (only enabled with BUILD_TESTING)
-ENABLE_COVERAGE:BOOL=OFF
-
-//Enable undefined behavior sanitizer
-ENABLE_UBSAN:BOOL=OFF
 
 //Enable -Werror in all Makefiles
 ENABLE_WERROR:BOOL=OFF
@@ -430,20 +399,12 @@ FETCHCONTENT_SOURCE_DIR_FLAC:PATH=
 FETCHCONTENT_SOURCE_DIR_FREETYPE:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for HarfBuzz
-FETCHCONTENT_SOURCE_DIR_HARFBUZZ:PATH=
-
-//When not empty, overrides where to find pre-populated content
 // for ogg
 FETCHCONTENT_SOURCE_DIR_OGG:PATH=
 
 //When not empty, overrides where to find pre-populated content
 // for SFML
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
-
-//When not empty, overrides where to find pre-populated content
-// for SheenBidi
-FETCHCONTENT_SOURCE_DIR_SHEENBIDI:PATH=
 
 //When not empty, overrides where to find pre-populated content
 // for vorbis
@@ -458,17 +419,11 @@ FETCHCONTENT_UPDATES_DISCONNECTED_FLAC:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of Freetype
 FETCHCONTENT_UPDATES_DISCONNECTED_FREETYPE:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of HarfBuzz
-FETCHCONTENT_UPDATES_DISCONNECTED_HARFBUZZ:BOOL=OFF
-
 //Enables UPDATE_DISCONNECTED behavior just for population of ogg
 FETCHCONTENT_UPDATES_DISCONNECTED_OGG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of SheenBidi
-FETCHCONTENT_UPDATES_DISCONNECTED_SHEENBIDI:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of vorbis
 FETCHCONTENT_UPDATES_DISCONNECTED_VORBIS:BOOL=OFF
@@ -485,36 +440,11 @@ FLAC_LIB_DEPENDS:STATIC=general;Ogg::ogg;
 //Value Computed by CMake
 FLAC_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/flac-src
 
-//Path to a program.
-GITCOMMAND:FILEPATH=/usr/bin/git
-
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Path to a program.
 HAVE_GIT:FILEPATH=/usr/bin/git
-
-//Build harfbuzz utils, needs cairo, freetype, and glib properly
-// be installed
-HB_BUILD_UTILS:BOOL=OFF
-
-//Enable cairo interop helpers
-HB_HAVE_CAIRO:BOOL=OFF
-
-//Enable glib unicode functions
-HB_HAVE_GLIB:BOOL=OFF
-
-//Enable GObject Bindings
-HB_HAVE_GOBJECT:BOOL=OFF
-
-//Enable Graphite2 complementary shaper
-HB_HAVE_GRAPHITE2:BOOL=OFF
-
-//Enable icu unicode functions
-HB_HAVE_ICU:BOOL=OFF
-
-//Enable building introspection (.gir/.typelib) files
-HB_HAVE_INTROSPECTION:BOOL=OFF
 
 //Install CMake package-config module
 INSTALL_CMAKE_CONFIG_MODULE:BOOL=ON
@@ -527,15 +457,6 @@ Iconv_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 //iconv library (if not in the C library)
 Iconv_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libiconv.tbd
-
-//Command to build the project
-MAKECOMMAND:STRING=/opt/homebrew/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Include for the OpenGL GLU library
 OPENGL_GLU_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
@@ -563,9 +484,6 @@ RhytmGame_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 RhytmGame_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3
-
-//Build with a single unity source file
-SB_CONFIG_UNITY:BOOL=ON
 
 //Value Computed by CMake
 SFML_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-build
@@ -624,18 +542,6 @@ SFML_USE_SYSTEM_DEPS:BOOL=OFF
 //Treat compiler warnings as errors
 SFML_WARNINGS_AS_ERRORS:BOOL=OFF
 
-//Name of the computer/site where compile is being run
-SITE:STRING=MacBook-Pro-Kirill.local
-
-//Value Computed by CMake
-SheenBidi_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-build
-
-//Value Computed by CMake
-SheenBidi_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-SheenBidi_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sheenbidi-src
-
 //Use any assembly optimization routines
 WITH_ASM:BOOL=ON
 
@@ -650,15 +556,6 @@ freetype_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 freetype_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-src
-
-//Value Computed by CMake
-harfbuzz_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/harfbuzz-build
-
-//Value Computed by CMake
-harfbuzz_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-harfbuzz_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/harfbuzz-src
 
 //Value Computed by CMake
 libogg_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-build
@@ -891,12 +788,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Test COMPILER_SUPPORTS_CXX11
-COMPILER_SUPPORTS_CXX11:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_BUNDLE
 CPACK_BINARY_BUNDLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DEB
@@ -933,14 +824,6 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
-//Test CXX_SUPPORTS_FLAG_BSYMB_FUNCS
-CXX_SUPPORTS_FLAG_BSYMB_FUNCS:INTERNAL=1
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Test DODEFINE_EXTENSIONS
 DODEFINE_EXTENSIONS:INTERNAL=1
 //Details about finding Iconv
@@ -949,8 +832,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_Iconv:INTERNAL=[/Applications/Xcode.app/Contents/De
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework][found components: OpenGL ][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v2.5.1()]
-//Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13][found components: Interpreter ][v3.13.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Result of CHECK_CPU_ARCH
@@ -961,16 +842,10 @@ FLAC__HAS_A64NEONINTRIN:INTERNAL=1
 FLAC__HAS_NEONINTRIN:INTERNAL=1
 //Have include x86intrin.h
 FLAC__HAS_X86INTRIN:INTERNAL=
-//Redirected by FetchContent
-Freetype_DIR:INTERNAL=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/pkgRedirects
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Test HAVE_ASSOC_MATH
 HAVE_ASSOC_MATH:INTERNAL=1
-//Have function atexit
-HAVE_ATEXIT:INTERNAL=1
 //Test HAVE_BSWAP16
 HAVE_BSWAP16:INTERNAL=1
 //Test HAVE_BSWAP32
@@ -995,8 +870,6 @@ HAVE_FLAC__CPU_X86_64:INTERNAL=FALSE
 HAVE_FLAC__HAS_A64NEONINTRIN:INTERNAL=TRUE
 //Have function fseeko
 HAVE_FSEEKO:INTERNAL=1
-//Have function getpagesize
-HAVE_GETPAGESIZE:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_INT16_SIZE:INTERNAL=TRUE
 //Result of TRY_COMPILE
@@ -1007,8 +880,6 @@ HAVE_INT64_SIZE:INTERNAL=TRUE
 HAVE_INTTYPES_H:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_INT_SIZE:INTERNAL=TRUE
-//Have function isatty
-HAVE_ISATTY:INTERNAL=1
 //Test HAVE_LANGINFO_CODESET
 HAVE_LANGINFO_CODESET:INTERNAL=1
 //Have library m
@@ -1021,10 +892,6 @@ HAVE_LONG_SIZE:INTERNAL=TRUE
 HAVE_LROUND:INTERNAL=1
 //Test HAVE_MBSTATE
 HAVE_MBSTATE:INTERNAL=1
-//Have function mmap
-HAVE_MMAP:INTERNAL=1
-//Have function mprotect
-HAVE_MPROTECT:INTERNAL=1
 //Result of TRY_COMPILE
 HAVE_SHORT_SIZE:INTERNAL=TRUE
 //Test HAVE_STACKREALIGN_FLAG
@@ -1035,10 +902,6 @@ HAVE_STDBOOL_H:INTERNAL=1
 HAVE_STDDEF_H:INTERNAL=1
 //Have include stdint.h
 HAVE_STDINT_H:INTERNAL=1
-//Have function sysconf
-HAVE_SYSCONF:INTERNAL=1
-//Have include sys/mman.h
-HAVE_SYS_MMAN_H:INTERNAL=1
 //Have include sys/param.h
 HAVE_SYS_PARAM_H:INTERNAL=1
 //Have include sys/types.h
@@ -1057,8 +920,6 @@ HAVE_U_INT32_SIZE:INTERNAL=TRUE
 HAVE_WEFFCXX_FLAG:INTERNAL=1
 //Test HAVE_WERROR_FLAG
 HAVE_WERROR_FLAG:INTERNAL=1
-//Redirected by FetchContent
-HarfBuzz_DIR:INTERNAL=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/pkgRedirects
 //Have include inttypes.h
 INCLUDE_INTTYPES_H:INTERNAL=1
 //Have include stdint.h
@@ -1083,12 +944,6 @@ Iconv_LIBRARY-ADVANCED:INTERNAL=1
 LONG_LONG_SIZE:INTERNAL=8
 //CHECK_TYPE_SIZE: sizeof(long)
 LONG_SIZE:INTERNAL=8
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ogg has already been built
 OGG_FOUND:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLU_INCLUDE_DIR
@@ -1105,8 +960,6 @@ PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: sizeof(short)
 SHORT_SIZE:INTERNAL=2
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: sizeof(uint16_t)
 UINT16_SIZE:INTERNAL=2
 //CHECK_TYPE_SIZE: sizeof(uint32_t)
@@ -1117,15 +970,4 @@ U_INT16_SIZE:INTERNAL=2
 U_INT32_SIZE:INTERNAL=4
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-//Compiler reason failure
-_Python3_Compiler_REASON_FAILURE:INTERNAL=
-//Development reason failure
-_Python3_Development_REASON_FAILURE:INTERNAL=
-//Path to a program.
-_Python3_EXECUTABLE:INTERNAL=/opt/homebrew/Frameworks/Python.framework/Versions/3.13/bin/python3.13
-//Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;1;64;32;<none>;cpython-313-darwin;abi3;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/opt/homebrew/lib/python3.13/site-packages;/opt/homebrew/lib/python3.13/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=7a1f714cc7198cb3c0d06752fabdd0bf
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
 

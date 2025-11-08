@@ -1,24 +1,20 @@
+#pragma once
+
 #include "Entity.hpp"
 #include <SFML/Graphics.hpp>
-
-enum class PositionState
-{
-    Up,
-    Down
-};
 
 class Player : Entity
 {
 private:
-    PositionState state;
-    sf::Texture texture;
-    sf::RectangleShape player_shape({100.f, 100.f});
+  sf::Texture texture;
+  sf::RectangleShape shape;
 
 public:
-    Player(sf::Vector2f pos, sf::Texture texture, PositionState state) {};
-    void update() override;
-    void jump();
-    sf::FloatRect getHitbox() const;
+  Player();
+  void draw(sf::RenderTarget &target) const override;
+  void update(float dt) override;
+  void jump();
+  sf::FloatRect getHitbox() const;
 };
 
 /**
