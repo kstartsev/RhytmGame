@@ -23,6 +23,8 @@ add_executable(game
     src/core/Context.cpp
     src/utils/Utils.cpp
     src/core/Scene.cpp
+    src/core/EventManager.cpp
+    src/core/FileManager.cpp
 )
 
 target_compile_features(game PRIVATE cxx_std_20)

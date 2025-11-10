@@ -1,4 +1,8 @@
 
 
+class MapBuilder
+{
+private:
 
-
+public:
+};

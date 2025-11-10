@@ -1,16 +1,18 @@
 #pragma once
 
 #include "Entity.hpp"
+#include "../core/EventManager.hpp"
 #include <SFML/Graphics.hpp>
 
 class Player : Entity
 {
 private:
+  EventManager &events;
   sf::Texture texture;
-  sf::RectangleShape shape;
+  sf::RectangleShape sprite;
 
 public:
-  Player();
+  Player(EventManager &events);
   void draw(sf::RenderTarget &target) const override;
   void update(float dt) override;
   void jump();

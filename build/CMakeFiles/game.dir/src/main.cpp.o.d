@@ -1093,4 +1093,10 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
-  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Entity.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Player.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../core/EventManager.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Obstacle.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp

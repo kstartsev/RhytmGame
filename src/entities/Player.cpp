@@ -1,29 +1,37 @@
 #include "Player.hpp"
+#include <iostream>
 
-Player::Player() : Entity({250.f, 650.f}, PositionState::Down)
+Player::Player(EventManager &events) : Entity({250.f, 650.f}, PositionState::Down), events(events)
 {
-  shape.setSize({100.f, 100.f});
-  shape.setFillColor(sf::Color::White); /// позже загрузка текстуры
-  shape.setPosition(position);
+  sprite.setSize({100.f, 100.f});
+  sprite.setFillColor(sf::Color::White); /// позже загрузка текстуры
+  sprite.setPosition(position);
   state = PositionState::Down;
 }
 
-void Player::draw(sf::RenderTarget &target) const { target.draw(shape); }
+void Player::draw(sf::RenderTarget &target) const { target.draw(sprite); }
 
 void Player::jump()
 {
   if (state == PositionState::Down)
   {
-    shape.move({0.f, -500.f});
+    sprite.move({0.f, -500.f});
     state = PositionState::Up;
   }
   else
   {
-    shape.move({0.f, 500.f});
+    sprite.move({0.f, 500.f});
     state = PositionState::Down;
   }
 }
 
-void Player::update(float dt) {}
+void Player::update(float dt)
+{
+  if (events.isSpacePressed())
+    jump();
+}
 
-sf::FloatRect Player::getHitbox() const { return shape.getGlobalBounds(); }
+sf::FloatRect Player::getHitbox() const
+{
+  return sprite.getGlobalBounds();
+}

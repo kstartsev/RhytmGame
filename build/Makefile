@@ -374,6 +374,30 @@ src/core/Context.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.s
 .PHONY : src/core/Context.cpp.s
 
+src/core/EventManager.o: src/core/EventManager.cpp.o
+.PHONY : src/core/EventManager.o
+
+# target to build an object file
+src/core/EventManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.o
+.PHONY : src/core/EventManager.cpp.o
+
+src/core/EventManager.i: src/core/EventManager.cpp.i
+.PHONY : src/core/EventManager.i
+
+# target to preprocess a source file
+src/core/EventManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.i
+.PHONY : src/core/EventManager.cpp.i
+
+src/core/EventManager.s: src/core/EventManager.cpp.s
+.PHONY : src/core/EventManager.s
+
+# target to generate assembly for a file
+src/core/EventManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.s
+.PHONY : src/core/EventManager.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -572,6 +596,9 @@ help:
 	@echo "... src/core/Context.o"
 	@echo "... src/core/Context.i"
 	@echo "... src/core/Context.s"
+	@echo "... src/core/EventManager.o"
+	@echo "... src/core/EventManager.i"
+	@echo "... src/core/EventManager.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"

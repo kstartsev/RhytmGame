@@ -13,7 +13,6 @@ class Context
 {
 private:
   double audio_duration = 0;
-  short speed_level = NORMAL_SPEED;
   int bpm = 0;
   double time_per_beat = 0;
   double pixels_per_second = 0;
@@ -30,8 +29,8 @@ public:
   Context& operator=(const Context& b) = default;
   void startTimers();
   void stopTimers();
-  float getDeltaTime();
-  void setSpeed(short speed);
+  void updateDeltaTime();
+  float getDeltaTime() const;
   void updateCurrentBeats();
   double getCurrentBeats();
   double getPixelsPerSecond();

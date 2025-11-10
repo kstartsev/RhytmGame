@@ -3,12 +3,12 @@
 #include "Context.hpp"
 
 Context::Context(double duration, int bpm, short speed)
-    : audio_duration(duration), bpm(bpm), speed_level(speed)
+    : audio_duration(duration), bpm(bpm)
 {
   clock.stop();
   delta_clock.stop();
   time_per_beat = 60 / bpm;
-  pixels_per_second = WINDOW_WIDTH / (time_per_beat * BEATS_PER_SCREEN);
+  pixels_per_second = (WINDOW_WIDTH / (time_per_beat * BEATS_PER_SCREEN)) * speed;
 }
 
 void Context::startTimers()
@@ -23,14 +23,15 @@ void Context::stopTimers()
   delta_clock.stop();
 }
 
-float Context::getDeltaTime()
+void Context::updateDeltaTime()
 {
   delta_time = delta_clock.restart();
-  // return -(pixels_per_second * speed_level * delta_time.asSeconds());
-  return delta_time.asSeconds();
 }
 
-void Context::setSpeed(short speed) { speed_level = speed; }
+float Context::getDeltaTime() const
+{
+  return delta_time.asSeconds();
+}
 
 void Context::updateCurrentBeats()
 {

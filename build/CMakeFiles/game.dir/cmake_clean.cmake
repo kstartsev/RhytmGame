@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/core/Context.cpp.o"
   "CMakeFiles/game.dir/src/core/Context.cpp.o.d"
+  "CMakeFiles/game.dir/src/core/EventManager.cpp.o"
+  "CMakeFiles/game.dir/src/core/EventManager.cpp.o.d"
   "CMakeFiles/game.dir/src/core/Game.cpp.o"
   "CMakeFiles/game.dir/src/core/Game.cpp.o.d"
   "CMakeFiles/game.dir/src/core/Scene.cpp.o"

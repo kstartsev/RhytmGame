@@ -1,7 +1,6 @@
 #include <vector>
-#include <SFML/System.hpp>
-
 #include <iostream>
+#include <SFML/System.hpp>
 
 #include "../entities/Obstacle.hpp"
 #include "../entities/Player.hpp"
@@ -9,7 +8,11 @@
 
 #include "Game.hpp"
 
-Game::Game(sf::RenderWindow &window) : window(window)
+#define NORMAL_SPEED 1
+#define FAST_SPEED 2
+#define VERYFAST_SPEED 3
+
+Game::Game(sf::RenderWindow &window) : window(window), events(window), scene(events)
 {
   if (!main_font.openFromFile("../src/level/assets/fonts/main_font.ttf"))
   {
@@ -20,42 +23,31 @@ Game::Game(sf::RenderWindow &window) : window(window)
 
 void Game::run()
 {
-
-  Player player;
-
-  std::vector<Obstacle> spikes;
-  // spikes.push_back(Obstacle(Utils::beatsToPixels(3.f) + 350.f, PositionState::Down, context.getPixelsPerSecond()));
-  // spikes.push_back(Obstacle(Utils::beatsToPixels(6.f) + 350.f, PositionState::Up, context.getPixelsPerSecond()));
-  spikes.push_back(Obstacle(Utils::beatsToPixels(8.f) + 350.f, PositionState::Down, context.getPixelsPerSecond()));
-
-
+  scene.addEntity(Obstacle(1.f, PositionState::Down, context.getPixelsPerSecond()));
+  scene.addEntity(Obstacle(1.2f, PositionState::Down, context.getPixelsPerSecond()));
+  scene.addEntity(Obstacle(1.4f, PositionState::Down, context.getPixelsPerSecond()));
+  scene.addEntity(Obstacle(2.f, PositionState::Up, context.getPixelsPerSecond()));
+  scene.addEntity(Obstacle(2.5f, PositionState::Down, context.getPixelsPerSecond()));
+  scene.addEntity(Obstacle(3.f, PositionState::Up, context.getPixelsPerSecond()));
 
   context.startTimers();
   while (window.isOpen())
   {
-    while (const std::optional event = window.pollEvent())
+    events.pollEvents();
+    if (events.isWindowClosed())
+      exit();
+    for (auto key : events.getPressedKeys())
     {
-      if (event->is<sf::Event::Closed>())
-        window.close();
-      if (event->is<sf::Event::KeyPressed>())
-      {
-        const auto *key_event = event->getIf<sf::Event::KeyPressed>();
-        if (key_event->scancode == sf::Keyboard::Scancode::Space)
-        {
-          player.jump();
-          std::cout << context.getCurrentBeats() << std::endl;
-        }
-        if (key_event->scancode == sf::Keyboard::Scancode::Escape)
-        {
-          pause();
-        }
-      }
+      if (key == Key::escape)
+        pause();
     }
+    context.updateDeltaTime();
+    scene.update(context.getDeltaTime());
+    if (scene.checkCollisions())
+      loss();
 
-    for(auto& spike: spikes) spike.update(context.getDeltaTime());
     window.clear(sf::Color::Black);
-    for(auto& spike: spikes) spike.draw(window);
-    player.draw(window);
+    scene.draw(window);
     window.display();
   }
 }
@@ -64,7 +56,7 @@ void Game::pause() // нужно еще рестарт
 {
   context.stopTimers();
   sf::Text pause_text{main_font};
-  pause_text.setString("PAUSED\n'R' to restart\n'Q' to exit");
+  pause_text.setString("PAUSED\n'ESC to continue'\n'R' to restart\n'Q' to exit");
   pause_text.setCharacterSize(80);
   pause_text.setFillColor(sf::Color::White);
 
@@ -72,21 +64,25 @@ void Game::pause() // нужно еще рестарт
 
   while (window.isOpen() && is_paused)
   {
-    while (const std::optional event = window.pollEvent())
+    events.pollEvents();
+    if (events.isWindowClosed())
+      exit();
+    for (auto key : events.getPressedKeys())
     {
-      if (event->is<sf::Event::Closed>())
-        window.close();
-      if (event->is<sf::Event::KeyPressed>())
+      switch (key)
       {
-        const auto *key_event = event->getIf<sf::Event::KeyPressed>();
-        if (key_event->scancode == sf::Keyboard::Scancode::Escape)
-        {
-          is_paused = false;
-        }
-        if (key_event->scancode == sf::Keyboard::Scancode::Q)
-        {
-          window.close();
-        }
+      case Key::escape:
+        is_paused = false;
+        break;
+      case Key::q:
+        exit();
+        break;
+      case Key::r:
+        restart();
+        break;
+
+      default:
+        break;
       }
     }
     window.clear(sf::Color::Black);
@@ -94,4 +90,44 @@ void Game::pause() // нужно еще рестарт
     window.display();
   }
   context.startTimers();
+}
+
+void Game::loss() // нужно еще рестарт
+{
+  context.stopTimers();
+  sf::Text loss_text = Utils::createText(main_font, "GAME OVER\n'R' to restart\n'Q' to exit", 200);
+
+  while (window.isOpen())
+  {
+    events.pollEvents();
+    if (events.isWindowClosed())
+      exit();
+    for (auto key : events.getPressedKeys())
+    {
+      switch (key)
+      {
+      case Key::q:
+        exit();
+        break;
+      case Key::r:
+        restart();
+        break;
+      default:
+        break;
+      }
+    }
+    window.clear(sf::Color::Black);
+    window.draw(loss_text);
+    window.display();
+  }
+  context.startTimers();
+}
+
+void Game::exit()
+{
+  window.close();
+}
+
+void Game::restart()
+{
 }

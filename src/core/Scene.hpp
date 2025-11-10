@@ -7,22 +7,26 @@
 #include "../entities/Entity.hpp"
 #include "../entities/Player.hpp"
 #include "../entities/Obstacle.hpp"
-
-
+#include "EventManager.hpp"
 
 class Scene
 {
 private:
-  std::vector<std::unique_ptr<Entity>> entities;
+  EventManager &events;
+  std::vector<Obstacle> entities;
   Player player;
 
+  void jumpPlayer();
+
 public:
-  Scene();
+  Scene(EventManager &events);
   ~Scene() = default;
 
+  void addEntity(Obstacle entity);
+  bool checkCollisions() const;
   void update(float dt);
-  void draw();
-  bool isCollission(const sf::FloatRect& player_hitbox, const sf::FloatRect& obstacle_hitbox) const;
+  void draw(sf::RenderTarget &target) const;
+
 };
 
 // std::vector<std::unique_ptr<Entity>> entities;

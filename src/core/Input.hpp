@@ -1,6 +1,0 @@
-
-
-class InputManager {
-private:
-public:
-};
