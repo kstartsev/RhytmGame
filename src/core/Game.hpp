@@ -15,15 +15,18 @@ private:
   Context context;
   Scene scene;
   EventManager events;
-  sf::Font main_font;
+  // sf::Font main_font;
 
 
 public:
-  explicit Game(sf::RenderWindow &window);
+  explicit Game(sf::RenderWindow &window, const std::unordered_map<std::string, std::string>& filenames);
 
+  void load();
   void run();
-  void pause();
-  void loss();
   void restart();
   void exit();
+
+  void pause();
+  void loss();
+  void win();
 };

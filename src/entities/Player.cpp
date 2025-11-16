@@ -1,15 +1,24 @@
 #include "Player.hpp"
 #include <iostream>
 
-Player::Player(EventManager &events) : Entity({250.f, 650.f}, PositionState::Down), events(events)
+#define DEFAULT_PLAYER_POS {250.f, 650.f}
+
+Player::Player(EventManager &events, std::shared_ptr<sf::Texture> texture_ptr) : Collidable(DEFAULT_PLAYER_POS, *texture_ptr, PositionState::Down), events(events), texture_ptr(texture_ptr)
 {
   sprite.setSize({100.f, 100.f});
-  sprite.setFillColor(sf::Color::White); /// позже загрузка текстуры
+  sprite.setTexture(texture_ptr.get());
+  sprite.setTextureRect(sf::IntRect({0, 0}, {100, 100}));
   sprite.setPosition(position);
   state = PositionState::Down;
 }
 
-void Player::draw(sf::RenderTarget &target) const { target.draw(sprite); }
+void Player::setTexture(std::shared_ptr<sf::Texture> texture_ptr)
+{
+  this->texture_ptr = texture_ptr;
+  render_states.texture = texture_ptr.get();
+}
+
+void Player::draw(sf::RenderTarget &target) const { target.draw(sprite, render_states); }
 
 void Player::jump()
 {
@@ -19,6 +28,15 @@ void Player::jump()
     state = PositionState::Up;
   }
   else
+  {
+    sprite.move({0.f, 500.f});
+    state = PositionState::Down;
+  }
+}
+
+void Player::reset()
+{
+  if (state == PositionState::Up)
   {
     sprite.move({0.f, 500.f});
     state = PositionState::Down;

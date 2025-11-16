@@ -4,14 +4,14 @@
 #include <SFML/Graphics.hpp>
 
 #define SCREEN_WIDTH 1920
-#define BITS_PER_SCREEN 4
+#define BEATS_PER_SCREEN 4
 
 class Utils
 {
 public:
-  static float beatsToPixels(double beats)
+  static float beatsToPixels(double beats, short speed)
   {
-    return (beats / BITS_PER_SCREEN) * SCREEN_WIDTH;
+    return (beats / BEATS_PER_SCREEN) * SCREEN_WIDTH * speed;
   }
 
   static bool checkCollision(const sf::FloatRect &a, const sf::FloatRect &b)
@@ -30,5 +30,4 @@ public:
     result.setFillColor(color);
     return result;
   }
-
 };

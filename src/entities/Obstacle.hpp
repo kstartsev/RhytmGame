@@ -2,28 +2,24 @@
 
 #include "Entity.hpp"
 #include <SFML/Graphics.hpp>
+#include <memory>
 
-class Obstacle : Entity
+class Obstacle : Collidable
 {
 private:
-  sf::Texture texture;
+  std::shared_ptr<sf::Texture> texture_ptr;
   sf::VertexArray sprite;
-  sf::Transform transform;
-  sf::FloatRect hitbox;
   double pixels_per_second;
   double beat_pos;
+  float start_x_pos;
+  float width;
+  float height;
 
 public:
-  Obstacle(float beat, PositionState state, double pixels_per_second, float width = 100.f, float height = 100.f);
+  Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width = 100.f, float height = 100.f);
+  void reset() override;
   void draw(sf::RenderTarget &target) const override;
   void update(float dt) override;
+  sf::FloatRect getHitbox() const override;
   void move(float pixels);
-  sf::FloatRect getHitbox() const;
 };
-
-/**
- * форма(или спрайт)
- * отрисовка
- * передвижение только по x
- * коллизии/хитбокс
- */

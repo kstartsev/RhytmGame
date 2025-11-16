@@ -398,6 +398,30 @@ src/core/EventManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.s
 .PHONY : src/core/EventManager.cpp.s
 
+src/core/FileManager.o: src/core/FileManager.cpp.o
+.PHONY : src/core/FileManager.o
+
+# target to build an object file
+src/core/FileManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.o
+.PHONY : src/core/FileManager.cpp.o
+
+src/core/FileManager.i: src/core/FileManager.cpp.i
+.PHONY : src/core/FileManager.i
+
+# target to preprocess a source file
+src/core/FileManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.i
+.PHONY : src/core/FileManager.cpp.i
+
+src/core/FileManager.s: src/core/FileManager.cpp.s
+.PHONY : src/core/FileManager.s
+
+# target to generate assembly for a file
+src/core/FileManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.s
+.PHONY : src/core/FileManager.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -599,6 +623,9 @@ help:
 	@echo "... src/core/EventManager.o"
 	@echo "... src/core/EventManager.i"
 	@echo "... src/core/EventManager.s"
+	@echo "... src/core/FileManager.o"
+	@echo "... src/core/FileManager.i"
+	@echo "... src/core/FileManager.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"

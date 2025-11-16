@@ -1,4 +1,5 @@
 #include <vector>
+#include <unordered_map>
 #include <iostream>
 #include <SFML/System.hpp>
 
@@ -12,35 +13,27 @@
 #define FAST_SPEED 2
 #define VERYFAST_SPEED 3
 
-Game::Game(sf::RenderWindow &window) : window(window), events(window), scene(events)
+Game::Game(sf::RenderWindow &window, const std::unordered_map<std::string, std::string> &filenames) : window(window), events(window), assets(filenames), scene(events)
 {
-  if (!main_font.openFromFile("../src/level/assets/fonts/main_font.ttf"))
-  {
-    std::cerr << "failed to load main_font.ttf" << std::endl;
-  }
-  context = Context(120, 60, 1);
 }
 
 void Game::run()
 {
-  scene.addEntity(Obstacle(1.f, PositionState::Down, context.getPixelsPerSecond()));
-  scene.addEntity(Obstacle(1.2f, PositionState::Down, context.getPixelsPerSecond()));
-  scene.addEntity(Obstacle(1.4f, PositionState::Down, context.getPixelsPerSecond()));
-  scene.addEntity(Obstacle(2.f, PositionState::Up, context.getPixelsPerSecond()));
-  scene.addEntity(Obstacle(2.5f, PositionState::Down, context.getPixelsPerSecond()));
-  scene.addEntity(Obstacle(3.f, PositionState::Up, context.getPixelsPerSecond()));
-
-  context.startTimers();
+  load();
   while (window.isOpen())
   {
+
     events.pollEvents();
     if (events.isWindowClosed())
       exit();
+    if (context.isFinish())
+      win();
     for (auto key : events.getPressedKeys())
     {
       if (key == Key::escape)
         pause();
     }
+
     context.updateDeltaTime();
     scene.update(context.getDeltaTime());
     if (scene.checkCollisions())
@@ -55,10 +48,7 @@ void Game::run()
 void Game::pause() // нужно еще рестарт
 {
   context.stopTimers();
-  sf::Text pause_text{main_font};
-  pause_text.setString("PAUSED\n'ESC to continue'\n'R' to restart\n'Q' to exit");
-  pause_text.setCharacterSize(80);
-  pause_text.setFillColor(sf::Color::White);
+  sf::Text pause_text = Utils::createText(assets.getFont(), "PAUSE\n'ESC' to continue\n'R' to restart\n'Q' to exit", 150);
 
   bool is_paused = true;
 
@@ -79,7 +69,7 @@ void Game::pause() // нужно еще рестарт
         break;
       case Key::r:
         restart();
-        break;
+        return;
 
       default:
         break;
@@ -95,10 +85,11 @@ void Game::pause() // нужно еще рестарт
 void Game::loss() // нужно еще рестарт
 {
   context.stopTimers();
-  sf::Text loss_text = Utils::createText(main_font, "GAME OVER\n'R' to restart\n'Q' to exit", 200);
+  sf::Text loss_text = Utils::createText(assets.getFont(), "GAME OVER\n'R' to restart\n'Q' to exit", 150);
 
   while (window.isOpen())
   {
+
     events.pollEvents();
     if (events.isWindowClosed())
       exit();
@@ -111,7 +102,8 @@ void Game::loss() // нужно еще рестарт
         break;
       case Key::r:
         restart();
-        break;
+        return;
+
       default:
         break;
       }
@@ -130,4 +122,52 @@ void Game::exit()
 
 void Game::restart()
 {
+  context.stopTimers();
+  context.reset();
+  scene.reset();
+  context.startTimers();
+}
+
+void Game::load()
+{
+  if (!assets.openFiles())
+    exit();
+  if (!assets.createContext(context))
+    exit();
+  if (!assets.createScene(scene, context.getPixelsPerSecond(), context.getAudioDuration()))
+    exit();
+  context.startTimers();
+}
+
+void Game::win()
+{
+  context.stopTimers();
+  sf::Text win_text = Utils::createText(assets.getFont(), "LEVEL COMPLETED\n'R' to restart\n'Q' to exit", 150);
+
+  while (window.isOpen())
+  {
+
+    events.pollEvents();
+    if (events.isWindowClosed())
+      exit();
+    for (auto key : events.getPressedKeys())
+    {
+      switch (key)
+      {
+      case Key::q:
+        exit();
+        break;
+      case Key::r:
+        restart();
+        return;
+
+      default:
+        break;
+      }
+    }
+    window.clear(sf::Color::Black);
+    window.draw(win_text);
+    window.display();
+  }
+  context.startTimers();
 }
