@@ -10,7 +10,6 @@ Player::Player(EventManager &events, std::shared_ptr<sf::Texture> texture_ptr) :
   sprite.setPosition(position);
   state = PositionState::Down;
   sprite.setTexture(texture_ptr.get());
-  // sprite.setTextureRect(sf::IntRect({0, 0}, {100, 100}));
 }
 
 void Player::setTexture(std::shared_ptr<sf::Texture> texture_ptr)
