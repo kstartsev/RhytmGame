@@ -9,11 +9,7 @@
 
 #include "Game.hpp"
 
-#define NORMAL_SPEED 1
-#define FAST_SPEED 2
-#define VERYFAST_SPEED 3
-
-Game::Game(sf::RenderWindow &window, const std::unordered_map<std::string, std::string> &filenames) : window(window), events(window), assets(filenames), scene(events)
+Game::Game(sf::RenderWindow &window) : window(window), events(window), assets(Resources::getDefaultFilenames()), scene(events)
 {
 }
 
@@ -22,7 +18,6 @@ void Game::run()
   load();
   while (window.isOpen())
   {
-
     events.pollEvents();
     if (events.isWindowClosed())
       exit();

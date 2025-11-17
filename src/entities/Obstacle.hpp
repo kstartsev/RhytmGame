@@ -1,13 +1,15 @@
 #pragma once
 
 #include "Entity.hpp"
+#include "../utils/Utils.hpp"
 #include <SFML/Graphics.hpp>
 #include <memory>
+
+using namespace EntitiesParameters;
 
 class Obstacle : Collidable
 {
 private:
-  std::shared_ptr<sf::Texture> texture_ptr;
   sf::VertexArray sprite;
   double pixels_per_second;
   double beat_pos;
@@ -16,7 +18,7 @@ private:
   float height;
 
 public:
-  Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width = 100.f, float height = 100.f);
+  Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width = DEFAULT_SPIKE_WIDTH, float height = DEFAULT_SPIKE_HEIGHT);
   void reset() override;
   void draw(sf::RenderTarget &target) const override;
   void update(float dt) override;

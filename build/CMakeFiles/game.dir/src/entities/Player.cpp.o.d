@@ -1095,4 +1095,5 @@ CMakeFiles/game.dir/src/entities/Player.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/../core/EventManager.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/../utils/Utils.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

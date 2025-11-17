@@ -8,7 +8,6 @@
 class Player : Collidable
 {
 private:
-  std::shared_ptr<sf::Texture> texture_ptr;
   EventManager &events;
   sf::RectangleShape sprite;
 

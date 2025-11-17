@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp" "CMakeFiles/game.dir/src/core/FileManager.cpp.o" "gcc" "CMakeFiles/game.dir/src/core/FileManager.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Game.cpp" "CMakeFiles/game.dir/src/core/Game.cpp.o" "gcc" "CMakeFiles/game.dir/src/core/Game.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.cpp" "CMakeFiles/game.dir/src/core/Scene.cpp.o" "gcc" "CMakeFiles/game.dir/src/core/Scene.cpp.o.d"
-  "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp" "CMakeFiles/game.dir/src/entities/Entity.cpp.o" "gcc" "CMakeFiles/game.dir/src/entities/Entity.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp" "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o" "gcc" "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Player.cpp" "CMakeFiles/game.dir/src/entities/Player.cpp.o" "gcc" "CMakeFiles/game.dir/src/entities/Player.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"

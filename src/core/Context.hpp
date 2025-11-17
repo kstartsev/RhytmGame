@@ -1,9 +1,8 @@
 #pragma once
 
 #include <SFML/System.hpp>
+#include "../utils/Utils.hpp"
 
-#define WINDOW_WIDTH 1920
-#define BEATS_PER_SCREEN 4
 #define NORMAL_SPEED 1
 
 class Context

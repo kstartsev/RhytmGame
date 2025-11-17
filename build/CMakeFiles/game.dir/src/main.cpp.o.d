@@ -1094,11 +1094,13 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../utils/Utils.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Entity.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Player.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Obstacle.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../utils/Utils.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream

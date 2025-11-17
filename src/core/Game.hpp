@@ -19,7 +19,7 @@ private:
 
 
 public:
-  explicit Game(sf::RenderWindow &window, const std::unordered_map<std::string, std::string>& filenames);
+  explicit Game(sf::RenderWindow &window);
 
   void load();
   void run();

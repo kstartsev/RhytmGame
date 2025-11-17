@@ -2,6 +2,8 @@
 
 #include "Context.hpp"
 
+using namespace DefaultParameters;
+
 Context::Context(double duration, int bpm, short speed)
     : audio_duration(duration), bpm(bpm), speed(speed)
 {

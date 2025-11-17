@@ -1095,6 +1095,7 @@ CMakeFiles/game.dir/src/core/Game.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Window/Touch.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../utils/Utils.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Player.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../utils/Utils.hpp \

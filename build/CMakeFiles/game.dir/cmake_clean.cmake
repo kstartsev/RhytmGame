@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/core/Game.cpp.o.d"
   "CMakeFiles/game.dir/src/core/Scene.cpp.o"
   "CMakeFiles/game.dir/src/core/Scene.cpp.o.d"
-  "CMakeFiles/game.dir/src/entities/Entity.cpp.o"
-  "CMakeFiles/game.dir/src/entities/Entity.cpp.o.d"
   "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o"
   "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o.d"
   "CMakeFiles/game.dir/src/entities/Player.cpp.o"

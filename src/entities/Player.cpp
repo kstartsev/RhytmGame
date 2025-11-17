@@ -1,11 +1,12 @@
 #include "Player.hpp"
+#include "../utils/Utils.hpp"
 #include <iostream>
 
-#define DEFAULT_PLAYER_POS {250.f, 650.f}
+using namespace EntitiesParameters;
 
-Player::Player(EventManager &events, std::shared_ptr<sf::Texture> texture_ptr) : Collidable(DEFAULT_PLAYER_POS, *texture_ptr, PositionState::Down), events(events), texture_ptr(texture_ptr)
+Player::Player(EventManager &events, std::shared_ptr<sf::Texture> texture_ptr) : Collidable(DEFAULT_PLAYER_POS, texture_ptr, PositionState::Down), events(events)
 {
-  sprite.setSize({100.f, 100.f});
+  sprite.setSize(DEFAULT_PLAYER_SIZE);
   sprite.setTexture(texture_ptr.get());
   sprite.setTextureRect(sf::IntRect({0, 0}, {100, 100}));
   sprite.setPosition(position);
@@ -24,12 +25,12 @@ void Player::jump()
 {
   if (state == PositionState::Down)
   {
-    sprite.move({0.f, -500.f});
+    sprite.move(PLAYER_UP_SHIFT);
     state = PositionState::Up;
   }
   else
   {
-    sprite.move({0.f, 500.f});
+    sprite.move(PLAYER_DOWN_SHIFT);
     state = PositionState::Down;
   }
 }
@@ -38,7 +39,7 @@ void Player::reset()
 {
   if (state == PositionState::Up)
   {
-    sprite.move({0.f, 500.f});
+    sprite.move(PLAYER_DOWN_SHIFT);
     state = PositionState::Down;
   }
 }

@@ -8,13 +8,7 @@
 
 #include "Scene.hpp"
 #include "Context.hpp"
-
-#define MAIN_FONT_KEY "main_font"
-#define LEVEL_KEY "level"
-#define PLAYER_TEXTURE_KEY "player"
-#define OBSTACLE_TEXTURE_KEY "obstacle"
-#define FLOOR_TEXTURE_KEY "floor"
-#define BACKGROUND_KEY "bg"
+#include "../utils/Utils.hpp"
 
 class FileManager
 {

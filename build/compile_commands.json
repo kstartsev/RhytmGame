@@ -19,12 +19,6 @@
 },
 {
   "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
-  "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/entities/Entity.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp",
-  "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp",
-  "output": "CMakeFiles/game.dir/src/entities/Entity.cpp.o"
-},
-{
-  "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
   "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/entities/Obstacle.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp",
   "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp",
   "output": "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o"
@@ -34,12 +28,6 @@
   "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/core/Context.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp",
   "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp",
   "output": "CMakeFiles/game.dir/src/core/Context.cpp.o"
-},
-{
-  "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
-  "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/utils/Utils.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp",
-  "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp",
-  "output": "CMakeFiles/game.dir/src/utils/Utils.cpp.o"
 },
 {
   "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
@@ -58,6 +46,12 @@
   "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/core/FileManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp",
   "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp",
   "output": "CMakeFiles/game.dir/src/core/FileManager.cpp.o"
+},
+{
+  "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
+  "command": "/usr/bin/clang++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/utils/Utils.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp",
+  "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp",
+  "output": "CMakeFiles/game.dir/src/utils/Utils.cpp.o"
 },
 {
   "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-build/src/SFML/System",

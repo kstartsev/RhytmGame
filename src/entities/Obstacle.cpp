@@ -1,13 +1,14 @@
 #include "Obstacle.hpp"
-#include "../utils/Utils.hpp"
 
 #include <iostream>
 
-#define SPIKE_YPOS_DOWN 750.f
-#define SPIKE_YPOS_UP 150.f
-#define PLAYER_XOFFSET 350.f
+using namespace EntitiesParameters;
 
-Obstacle::Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width, float height) : beat_pos(beat), Collidable({Utils::beatsToPixels(beat, speed) + PLAYER_XOFFSET, state == PositionState::Down ? SPIKE_YPOS_DOWN : SPIKE_YPOS_UP}, *texture_ptr, state), texture_ptr(texture_ptr), sprite(sf::PrimitiveType::Triangles, 3), pixels_per_second(pixels_per_second), width(width), height(height)
+Obstacle::Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width, float height) : beat_pos(beat),
+                                                                                                                                                                  Collidable({Utils::beatsToPixels(beat, speed) + PLAYER_XOFFSET, state == PositionState::Down ? SPIKE_YPOS_DOWN : SPIKE_YPOS_UP}, texture_ptr, state),
+                                                                                                                                                                  sprite(sf::PrimitiveType::Triangles, SPIKE_VERTEXES_NUMBER), pixels_per_second(pixels_per_second),
+                                                                                                                                                                  width(width),
+                                                                                                                                                                  height(height)
 {
   sprite[0].position = {position.x - width / 2, position.y};
   sprite[1].position = {position.x + width / 2, position.y};

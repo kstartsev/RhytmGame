@@ -114,24 +114,10 @@ CMakeFiles/game.dir/src/entities/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/entities/Player.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Player.cpp -o CMakeFiles/game.dir/src/entities/Player.cpp.s
 
-CMakeFiles/game.dir/src/entities/Entity.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/entities/Entity.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp
-CMakeFiles/game.dir/src/entities/Entity.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/entities/Entity.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/entities/Entity.cpp.o -MF CMakeFiles/game.dir/src/entities/Entity.cpp.o.d -o CMakeFiles/game.dir/src/entities/Entity.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp
-
-CMakeFiles/game.dir/src/entities/Entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/entities/Entity.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp > CMakeFiles/game.dir/src/entities/Entity.cpp.i
-
-CMakeFiles/game.dir/src/entities/Entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/entities/Entity.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Entity.cpp -o CMakeFiles/game.dir/src/entities/Entity.cpp.s
-
 CMakeFiles/game.dir/src/entities/Obstacle.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/entities/Obstacle.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp
 CMakeFiles/game.dir/src/entities/Obstacle.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/entities/Obstacle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/entities/Obstacle.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/entities/Obstacle.cpp.o -MF CMakeFiles/game.dir/src/entities/Obstacle.cpp.o.d -o CMakeFiles/game.dir/src/entities/Obstacle.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp
 
 CMakeFiles/game.dir/src/entities/Obstacle.cpp.i: cmake_force
@@ -145,7 +131,7 @@ CMakeFiles/game.dir/src/entities/Obstacle.cpp.s: cmake_force
 CMakeFiles/game.dir/src/core/Context.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/core/Context.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp
 CMakeFiles/game.dir/src/core/Context.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/core/Context.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/core/Context.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/core/Context.cpp.o -MF CMakeFiles/game.dir/src/core/Context.cpp.o.d -o CMakeFiles/game.dir/src/core/Context.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp
 
 CMakeFiles/game.dir/src/core/Context.cpp.i: cmake_force
@@ -156,24 +142,10 @@ CMakeFiles/game.dir/src/core/Context.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/core/Context.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp -o CMakeFiles/game.dir/src/core/Context.cpp.s
 
-CMakeFiles/game.dir/src/utils/Utils.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/utils/Utils.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
-CMakeFiles/game.dir/src/utils/Utils.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/utils/Utils.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/utils/Utils.cpp.o -MF CMakeFiles/game.dir/src/utils/Utils.cpp.o.d -o CMakeFiles/game.dir/src/utils/Utils.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
-
-CMakeFiles/game.dir/src/utils/Utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/utils/Utils.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp > CMakeFiles/game.dir/src/utils/Utils.cpp.i
-
-CMakeFiles/game.dir/src/utils/Utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/utils/Utils.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp -o CMakeFiles/game.dir/src/utils/Utils.cpp.s
-
 CMakeFiles/game.dir/src/core/Scene.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/core/Scene.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.cpp
 CMakeFiles/game.dir/src/core/Scene.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/core/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/core/Scene.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/core/Scene.cpp.o -MF CMakeFiles/game.dir/src/core/Scene.cpp.o.d -o CMakeFiles/game.dir/src/core/Scene.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.cpp
 
 CMakeFiles/game.dir/src/core/Scene.cpp.i: cmake_force
@@ -187,7 +159,7 @@ CMakeFiles/game.dir/src/core/Scene.cpp.s: cmake_force
 CMakeFiles/game.dir/src/core/EventManager.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/core/EventManager.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.cpp
 CMakeFiles/game.dir/src/core/EventManager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/core/EventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/core/EventManager.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/core/EventManager.cpp.o -MF CMakeFiles/game.dir/src/core/EventManager.cpp.o.d -o CMakeFiles/game.dir/src/core/EventManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.cpp
 
 CMakeFiles/game.dir/src/core/EventManager.cpp.i: cmake_force
@@ -201,7 +173,7 @@ CMakeFiles/game.dir/src/core/EventManager.cpp.s: cmake_force
 CMakeFiles/game.dir/src/core/FileManager.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/core/FileManager.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp
 CMakeFiles/game.dir/src/core/FileManager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/src/core/FileManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/core/FileManager.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/core/FileManager.cpp.o -MF CMakeFiles/game.dir/src/core/FileManager.cpp.o.d -o CMakeFiles/game.dir/src/core/FileManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp
 
 CMakeFiles/game.dir/src/core/FileManager.cpp.i: cmake_force
@@ -212,18 +184,31 @@ CMakeFiles/game.dir/src/core/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/core/FileManager.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp -o CMakeFiles/game.dir/src/core/FileManager.cpp.s
 
+CMakeFiles/game.dir/src/utils/Utils.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/utils/Utils.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
+CMakeFiles/game.dir/src/utils/Utils.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/utils/Utils.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/utils/Utils.cpp.o -MF CMakeFiles/game.dir/src/utils/Utils.cpp.o.d -o CMakeFiles/game.dir/src/utils/Utils.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
+
+CMakeFiles/game.dir/src/utils/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/utils/Utils.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp > CMakeFiles/game.dir/src/utils/Utils.cpp.i
+
+CMakeFiles/game.dir/src/utils/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/utils/Utils.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp -o CMakeFiles/game.dir/src/utils/Utils.cpp.s
+
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/src/main.cpp.o" \
 "CMakeFiles/game.dir/src/core/Game.cpp.o" \
 "CMakeFiles/game.dir/src/entities/Player.cpp.o" \
-"CMakeFiles/game.dir/src/entities/Entity.cpp.o" \
 "CMakeFiles/game.dir/src/entities/Obstacle.cpp.o" \
 "CMakeFiles/game.dir/src/core/Context.cpp.o" \
-"CMakeFiles/game.dir/src/utils/Utils.cpp.o" \
 "CMakeFiles/game.dir/src/core/Scene.cpp.o" \
 "CMakeFiles/game.dir/src/core/EventManager.cpp.o" \
-"CMakeFiles/game.dir/src/core/FileManager.cpp.o"
+"CMakeFiles/game.dir/src/core/FileManager.cpp.o" \
+"CMakeFiles/game.dir/src/utils/Utils.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
@@ -231,13 +216,12 @@ game_EXTERNAL_OBJECTS =
 bin/game: CMakeFiles/game.dir/src/main.cpp.o
 bin/game: CMakeFiles/game.dir/src/core/Game.cpp.o
 bin/game: CMakeFiles/game.dir/src/entities/Player.cpp.o
-bin/game: CMakeFiles/game.dir/src/entities/Entity.cpp.o
 bin/game: CMakeFiles/game.dir/src/entities/Obstacle.cpp.o
 bin/game: CMakeFiles/game.dir/src/core/Context.cpp.o
-bin/game: CMakeFiles/game.dir/src/utils/Utils.cpp.o
 bin/game: CMakeFiles/game.dir/src/core/Scene.cpp.o
 bin/game: CMakeFiles/game.dir/src/core/EventManager.cpp.o
 bin/game: CMakeFiles/game.dir/src/core/FileManager.cpp.o
+bin/game: CMakeFiles/game.dir/src/utils/Utils.cpp.o
 bin/game: CMakeFiles/game.dir/build.make
 bin/game: _deps/sfml-build/lib/libsfml-graphics-s-d.a
 bin/game: _deps/sfml-build/lib/libsfml-window-s-d.a
@@ -251,7 +235,7 @@ bin/game: _deps/sfml-build/lib/libvorbisd.a
 bin/game: _deps/sfml-build/lib/libFLACd.a
 bin/game: _deps/sfml-build/lib/liboggd.a
 bin/game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bin/game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

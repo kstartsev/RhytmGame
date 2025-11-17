@@ -470,30 +470,6 @@ src/core/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.s
 .PHONY : src/core/Scene.cpp.s
 
-src/entities/Entity.o: src/entities/Entity.cpp.o
-.PHONY : src/entities/Entity.o
-
-# target to build an object file
-src/entities/Entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.o
-.PHONY : src/entities/Entity.cpp.o
-
-src/entities/Entity.i: src/entities/Entity.cpp.i
-.PHONY : src/entities/Entity.i
-
-# target to preprocess a source file
-src/entities/Entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.i
-.PHONY : src/entities/Entity.cpp.i
-
-src/entities/Entity.s: src/entities/Entity.cpp.s
-.PHONY : src/entities/Entity.s
-
-# target to generate assembly for a file
-src/entities/Entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Entity.cpp.s
-.PHONY : src/entities/Entity.cpp.s
-
 src/entities/Obstacle.o: src/entities/Obstacle.cpp.o
 .PHONY : src/entities/Obstacle.o
 
@@ -632,9 +608,6 @@ help:
 	@echo "... src/core/Scene.o"
 	@echo "... src/core/Scene.i"
 	@echo "... src/core/Scene.s"
-	@echo "... src/entities/Entity.o"
-	@echo "... src/entities/Entity.i"
-	@echo "... src/entities/Entity.s"
 	@echo "... src/entities/Obstacle.o"
 	@echo "... src/entities/Obstacle.i"
 	@echo "... src/entities/Obstacle.s"

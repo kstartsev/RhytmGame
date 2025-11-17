@@ -18,13 +18,12 @@ add_executable(game
     src/main.cpp
     src/core/Game.cpp
     src/entities/Player.cpp
-    src/entities/Entity.cpp
     src/entities/Obstacle.cpp
     src/core/Context.cpp
-    src/utils/Utils.cpp
     src/core/Scene.cpp
     src/core/EventManager.cpp
     src/core/FileManager.cpp
+    src/utils/Utils.cpp
 )
 
 target_compile_features(game PRIVATE cxx_std_20)
