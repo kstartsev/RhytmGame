@@ -17,5 +17,5 @@ public:
   void reset() override;
   void draw(sf::RenderTarget &target) const override;
   void update(float dt) override;
-  void setTexture(std::shared_ptr<sf::Texture> texture_ptr);
+  // void setTexture(std::shared_ptr<sf::Texture> texture_ptr);
 };

@@ -25,14 +25,14 @@ void Scene::addObstacle(std::shared_ptr<sf::Texture> texture_ptr, float pos, Pos
   obstacles.push_back(Obstacle(pos, texture_ptr, state, pixels_per_second, speed));
 }
 
+void Scene::addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second)
+{
+  decorations.push_back(std::make_unique<Borders>(texture_ptr, pixels_per_second));
+}
+
 void Scene::setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr)
 {
   player.setTexture(texture_ptr);
-}
-
-void Scene::setBordersTexture(std::shared_ptr<sf::Texture> texture_ptr)
-{
-  borders.setTexture(texture_ptr);
 }
 
 bool Scene::checkCollisions() const
@@ -50,16 +50,27 @@ bool Scene::checkCollisions() const
 void Scene::update(float dt)
 {
   player.update(dt);
+
   for (auto &obstacle : obstacles)
   {
     obstacle.update(dt);
+  }
+
+  for (auto &entity : decorations)
+  {
+    entity->update(dt);
   }
 }
 
 void Scene::draw(sf::RenderTarget &target) const
 {
   player.draw(target);
-  borders.draw(target);
+
+  for (auto &entity : decorations)
+  {
+    entity->draw(target);
+  }
+
   for (auto &obstacle : obstacles)
   {
     obstacle.draw(target);

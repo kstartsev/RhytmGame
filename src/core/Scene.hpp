@@ -16,8 +16,8 @@ class Scene
 private:
   EventManager &events;
   std::vector<Obstacle> obstacles;
+  std::vector<std::unique_ptr<Entity>> decorations;
   Player player;
-  Borders borders;
   float time_passed;
 
 public:
@@ -27,8 +27,9 @@ public:
   void reset();
 
   void addObstacle(std::shared_ptr<sf::Texture> texture_ptr, float pos, PositionState state, double pixels_per_second, short speed);
+  void addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second);
   void setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr);
-  void setBordersTexture(std::shared_ptr<sf::Texture> texture_ptr);
+  // void setBordersTexture(std::shared_ptr<sf::Texture> texture_ptr);
   bool checkCollisions() const;
   void update(float dt);
   void draw(sf::RenderTarget &target) const;

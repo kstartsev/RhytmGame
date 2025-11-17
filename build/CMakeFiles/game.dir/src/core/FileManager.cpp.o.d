@@ -1100,6 +1100,7 @@ CMakeFiles/game.dir/src/core/FileManager.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Obstacle.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../utils/Utils.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Borders.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../utils/Utils.hpp \

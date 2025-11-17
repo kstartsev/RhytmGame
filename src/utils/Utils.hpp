@@ -30,6 +30,7 @@ namespace Resources
 namespace DefaultParameters
 {
   constexpr int WINDOW_WIDTH = 1920;
+  constexpr int WINDOW_HEIGHT = 1200;
   constexpr int BEATS_PER_SCREEN = 4;
 };
 
@@ -50,9 +51,11 @@ namespace EntitiesParameters
   constexpr sf::Vector2f PLAYER_DOWN_SHIFT{0.f, 500.f};
 
   // floor/roof
-  constexpr float ROOF_BOTTOM = 250.f;
+  constexpr float ROOF_BOTTOM = 150.f;
   constexpr float ROOF_TOP = 0.f;
   constexpr float FLOOR_BOTTOM = 1200.f;
   constexpr float FLOOR_TOP = 750.f;
 
+  // background
+  constexpr sf::Vector2f BACKGROUND_SIZE = {DefaultParameters::WINDOW_WIDTH, ROOF_BOTTOM - FLOOR_TOP};
 };
