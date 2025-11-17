@@ -420,7 +420,7 @@ CMakeFiles/game.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
 CMakeFiles/game.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=35,36,37,38 "Built target game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=35,36,37,38,39 "Built target game"
 .PHONY : CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
@@ -437,7 +437,7 @@ game: CMakeFiles/game.dir/rule
 # codegen rule for target.
 CMakeFiles/game.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=35,36,37,38 "Finished codegen for target game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=35,36,37,38,39 "Finished codegen for target game"
 .PHONY : CMakeFiles/game.dir/codegen
 
 # clean rule for target.
@@ -624,7 +624,7 @@ _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-buil
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
@@ -651,12 +651,12 @@ _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/clean:
 _deps/ogg-build/CMakeFiles/ogg.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=39,40 "Built target ogg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=40 "Built target ogg"
 .PHONY : _deps/ogg-build/CMakeFiles/ogg.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/ogg-build/CMakeFiles/ogg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/ogg-build/CMakeFiles/ogg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/ogg-build/CMakeFiles/ogg.dir/rule
@@ -668,7 +668,7 @@ ogg: _deps/ogg-build/CMakeFiles/ogg.dir/rule
 # codegen rule for target.
 _deps/ogg-build/CMakeFiles/ogg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/ogg-build/CMakeFiles/ogg.dir/build.make _deps/ogg-build/CMakeFiles/ogg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=39,40 "Finished codegen for target ogg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=40 "Finished codegen for target ogg"
 .PHONY : _deps/ogg-build/CMakeFiles/ogg.dir/codegen
 
 # clean rule for target.
@@ -688,7 +688,7 @@ _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all: _deps/ogg-build/CMakeFiles
 
 # Build rule for subdir invocation for target.
 _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/rule
@@ -721,7 +721,7 @@ _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/all: _deps/flac-bu
 
 # Build rule for subdir invocation for target.
 _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/rule
@@ -753,7 +753,7 @@ _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/all: _deps/ogg-build/CMakeFiles/ogg
 
 # Build rule for subdir invocation for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule
@@ -786,7 +786,7 @@ _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all: _deps/vorbis-build/lib/CMak
 
 # Build rule for subdir invocation for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule
@@ -819,7 +819,7 @@ _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all: _deps/vorbis-build/lib/CMa
 
 # Build rule for subdir invocation for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles 0
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule

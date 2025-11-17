@@ -7,19 +7,19 @@ using namespace EntitiesParameters;
 Player::Player(EventManager &events, std::shared_ptr<sf::Texture> texture_ptr) : Collidable(DEFAULT_PLAYER_POS, texture_ptr, PositionState::Down), events(events)
 {
   sprite.setSize(DEFAULT_PLAYER_SIZE);
-  sprite.setTexture(texture_ptr.get());
-  sprite.setTextureRect(sf::IntRect({0, 0}, {100, 100}));
   sprite.setPosition(position);
   state = PositionState::Down;
+  sprite.setTexture(texture_ptr.get());
+  // sprite.setTextureRect(sf::IntRect({0, 0}, {100, 100}));
 }
 
 void Player::setTexture(std::shared_ptr<sf::Texture> texture_ptr)
 {
-  this->texture_ptr = texture_ptr;
-  render_states.texture = texture_ptr.get();
+  sprite.setTexture(texture_ptr.get());
+  sprite.setTextureRect(sf::IntRect({0, 10}, {100, 100}));
 }
 
-void Player::draw(sf::RenderTarget &target) const { target.draw(sprite, render_states); }
+void Player::draw(sf::RenderTarget &target) const { target.draw(sprite); }
 
 void Player::jump()
 {

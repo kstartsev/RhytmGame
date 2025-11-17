@@ -1102,6 +1102,7 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Obstacle.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../utils/Utils.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Borders.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Background.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream

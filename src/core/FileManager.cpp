@@ -96,19 +96,22 @@ bool FileManager::createScene(Scene &scene, double pixels_per_second, double dur
   std::string parameters_line;
   /// player texture set
   auto player_texture = textures[PLAYER_TEXTURE_KEY];
-  player_texture->setSmooth(true);
   if (player_texture)
   {
     scene.setPlayerTexture(player_texture);
   }
+  /// bg texture set
+  auto bg_texture = textures[BACKGROUND_KEY];
+  if (bg_texture)
+  {
+    scene.addBackground(bg_texture, pixels_per_second, level_speed);
+  }
   /// borders texture set
   auto floor_texture = textures[FLOOR_TEXTURE_KEY];
-  floor_texture->setSmooth(true);
   if (floor_texture)
   {
-    scene.addBorders(floor_texture, pixels_per_second);
+    scene.addBorders(floor_texture, pixels_per_second, level_speed);
   }
-
 
   while (std::getline(level_file, parameters_line))
   {

@@ -470,6 +470,30 @@ src/core/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.s
 .PHONY : src/core/Scene.cpp.s
 
+src/entities/Background.o: src/entities/Background.cpp.o
+.PHONY : src/entities/Background.o
+
+# target to build an object file
+src/entities/Background.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.o
+.PHONY : src/entities/Background.cpp.o
+
+src/entities/Background.i: src/entities/Background.cpp.i
+.PHONY : src/entities/Background.i
+
+# target to preprocess a source file
+src/entities/Background.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.i
+.PHONY : src/entities/Background.cpp.i
+
+src/entities/Background.s: src/entities/Background.cpp.s
+.PHONY : src/entities/Background.s
+
+# target to generate assembly for a file
+src/entities/Background.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.s
+.PHONY : src/entities/Background.cpp.s
+
 src/entities/Borders.o: src/entities/Borders.cpp.o
 .PHONY : src/entities/Borders.o
 
@@ -632,6 +656,9 @@ help:
 	@echo "... src/core/Scene.o"
 	@echo "... src/core/Scene.i"
 	@echo "... src/core/Scene.s"
+	@echo "... src/entities/Background.o"
+	@echo "... src/entities/Background.i"
+	@echo "... src/entities/Background.s"
 	@echo "... src/entities/Borders.o"
 	@echo "... src/entities/Borders.i"
 	@echo "... src/entities/Borders.s"

@@ -57,5 +57,7 @@ namespace EntitiesParameters
   constexpr float FLOOR_TOP = 750.f;
 
   // background
-  constexpr sf::Vector2f BACKGROUND_SIZE = {DefaultParameters::WINDOW_WIDTH, ROOF_BOTTOM - FLOOR_TOP};
+  constexpr float BACKGROUND_WIDTH = 1920.f;
+  constexpr float BACKGROUND_HEIGHT = 600.f;
+
 };

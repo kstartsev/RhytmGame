@@ -1103,6 +1103,7 @@ CMakeFiles/game.dir/src/core/Game.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Borders.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Background.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream

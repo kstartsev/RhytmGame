@@ -8,6 +8,8 @@
 #include "../entities/Player.hpp"
 #include "../entities/Obstacle.hpp"
 #include "../entities/Borders.hpp"
+#include "../entities/Background.hpp"
+
 #include "EventManager.hpp"
 #include <memory>
 
@@ -27,7 +29,8 @@ public:
   void reset();
 
   void addObstacle(std::shared_ptr<sf::Texture> texture_ptr, float pos, PositionState state, double pixels_per_second, short speed);
-  void addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second);
+  void addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed);
+  void addBackground(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed);
   void setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr);
   // void setBordersTexture(std::shared_ptr<sf::Texture> texture_ptr);
   bool checkCollisions() const;

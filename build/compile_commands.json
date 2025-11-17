@@ -31,6 +31,12 @@
 },
 {
   "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
+  "command": "/usr/bin/c++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/entities/Background.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Background.cpp",
+  "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Background.cpp",
+  "output": "CMakeFiles/game.dir/src/entities/Background.cpp.o"
+},
+{
+  "directory": "/Users/kirillstarcev/всякое/coding/ооп/lab3/build",
   "command": "/usr/bin/c++ -DSFML_STATIC -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/game.dir/src/core/Context.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp",
   "file": "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp",
   "output": "CMakeFiles/game.dir/src/core/Context.cpp.o"
