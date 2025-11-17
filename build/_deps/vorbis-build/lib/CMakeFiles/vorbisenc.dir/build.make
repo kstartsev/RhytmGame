@@ -76,15 +76,15 @@ _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o: _deps/vorbis-buil
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o: _deps/vorbis-src/lib/vorbisenc.c
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o -MF CMakeFiles/vorbisenc.dir/vorbisenc.c.o.d -o CMakeFiles/vorbisenc.dir/vorbisenc.c.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o -MF CMakeFiles/vorbisenc.dir/vorbisenc.c.o.d -o CMakeFiles/vorbisenc.dir/vorbisenc.c.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c
 
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vorbisenc.dir/vorbisenc.c.i"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c > CMakeFiles/vorbisenc.dir/vorbisenc.c.i
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c > CMakeFiles/vorbisenc.dir/vorbisenc.c.i
 
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vorbisenc.dir/vorbisenc.c.s"
-	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c -o CMakeFiles/vorbisenc.dir/vorbisenc.c.s
+	cd /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/vorbis-src/lib/vorbisenc.c -o CMakeFiles/vorbisenc.dir/vorbisenc.c.s
 
 # Object files for target vorbisenc
 vorbisenc_OBJECTS = \

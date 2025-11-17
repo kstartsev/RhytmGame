@@ -19,6 +19,7 @@ add_executable(game
     src/core/Game.cpp
     src/entities/Player.cpp
     src/entities/Obstacle.cpp
+    src/entities/Borders.cpp
     src/core/Context.cpp
     src/core/Scene.cpp
     src/core/EventManager.cpp

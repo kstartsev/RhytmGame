@@ -94,11 +94,19 @@ bool FileManager::createContext(Context &context)
 bool FileManager::createScene(Scene &scene, double pixels_per_second, double duration)
 {
   std::string parameters_line;
+  /// player texture set
   auto player_texture = textures[PLAYER_TEXTURE_KEY];
   if (player_texture)
   {
     scene.setPlayerTexture(player_texture);
   }
+  /// borders texture set
+  auto floor_texture = textures[FLOOR_TEXTURE_KEY];
+  if (floor_texture)
+  {
+    scene.setBordersTexture(floor_texture);
+  }
+
 
   while (std::getline(level_file, parameters_line))
   {
@@ -117,8 +125,6 @@ bool FileManager::createScene(Scene &scene, double pixels_per_second, double dur
       {
         scene.addObstacle(obstacle_texture, pos, state, pixels_per_second, level_speed);
       }
-      // scene.addObstacle(Obstacle(pos, textures[OBSTACLE_TEXTURE_KEY], state, pixels_per_second, level_speed));
-      // scene.addObstacle(Obstacle(pos, sf::Texture(), state, pixels_per_second, level_speed));
 
       is_any_loaded = true;
     }

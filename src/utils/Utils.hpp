@@ -49,7 +49,7 @@ namespace EntitiesParameters
   constexpr sf::Vector2f PLAYER_UP_SHIFT{0.f, -500.f};
   constexpr sf::Vector2f PLAYER_DOWN_SHIFT{0.f, 500.f};
 
-  // floor
+  // floor/roof
   constexpr float ROOF_BOTTOM = 250.f;
   constexpr float ROOF_TOP = 0.f;
   constexpr float FLOOR_BOTTOM = 1200.f;

@@ -30,6 +30,11 @@ void Scene::setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr)
   player.setTexture(texture_ptr);
 }
 
+void Scene::setBordersTexture(std::shared_ptr<sf::Texture> texture_ptr)
+{
+  borders.setTexture(texture_ptr);
+}
+
 bool Scene::checkCollisions() const
 {
   for (auto &obstacle : obstacles)
@@ -54,6 +59,7 @@ void Scene::update(float dt)
 void Scene::draw(sf::RenderTarget &target) const
 {
   player.draw(target);
+  borders.draw(target);
   for (auto &obstacle : obstacles)
   {
     obstacle.draw(target);
