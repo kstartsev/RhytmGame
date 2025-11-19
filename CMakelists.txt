@@ -29,4 +29,5 @@ add_executable(game
 )
 
 target_compile_features(game PRIVATE cxx_std_20)
+add_compile_options(-g)
 target_link_libraries(game PRIVATE SFML::Graphics SFML::Window SFML::Audio SFML::System)

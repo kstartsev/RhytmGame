@@ -1,4 +1,7 @@
 #include "Utils.hpp"
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 float Utils::beatsToPixels(double beats, short speed)
 {
@@ -22,16 +25,40 @@ sf::Text Utils::createText(sf::Font font, std::string text, int size, sf::Color 
   return result;
 }
 
-const std::unordered_map<std::string, std::string> &Resources::getDefaultFilenames()
+const std::unordered_map<std::string, std::string> Resources::getDefaultFilenames()
 {
-  static const std::unordered_map<std::string, std::string> filenames =
-      {
-          {Resources::LEVEL_KEY, "../src/level/level.txt"},
-          {Resources::MAIN_FONT_KEY, "../src/level/assets/fonts/main_font.ttf"},
-          {Resources::PLAYER_TEXTURE_KEY, "../src/level/assets/textures/player.png"},
-          {Resources::OBSTACLE_TEXTURE_KEY, "../src/level/assets/textures/obstacle.png"},
-          {Resources::FLOOR_TEXTURE_KEY, "../src/level/assets/textures/floor.png"},
-          {Resources::ROOF_TEXTURE_KEY, "../src/level/assets/textures/roof.png"},
-          {Resources::BACKGROUND_KEY, "../src/level/assets/textures/bg.png"}};
-  return filenames;
+  // static const std::unordered_map<std::string, std::string> file_paths =
+  //     {
+  //         {Resources::LEVEL_KEY, "../src/level/level.txt"},
+  //         {Resources::MAIN_FONT_KEY, "../src/level/assets/fonts/main_font.ttf"},
+  //         {Resources::PLAYER_TEXTURE_KEY, "../src/level/assets/textures/player.png"},
+  //         {Resources::OBSTACLE_TEXTURE_KEY, "../src/level/assets/textures/obstacle.png"},
+  //         {Resources::FLOOR_TEXTURE_KEY, "../src/level/assets/textures/floor.png"},
+  //         {Resources::ROOF_TEXTURE_KEY, "../src/level/assets/textures/roof.png"},
+  //         {Resources::BACKGROUND_KEY, "../src/level/assets/textures/bg.png"}};
+  std::unordered_map<std::string, std::string> file_paths;
+  std::ifstream preferences_file;
+  std::string assets_parameters;
+  std::string key;
+  std::string path;
+
+  preferences_file.open(PREFERENCES_PATH);
+  if (!preferences_file.is_open())
+  {
+    std::cout << "jopa" << std::endl;
+    // add exception
+  }
+  while (std::getline(preferences_file, assets_parameters))
+  {
+    std::istringstream parameters_stream(assets_parameters);
+    if (parameters_stream >> key >> path)
+    {
+      file_paths[key] = ASSETS_PATH + path;
+    }
+    else
+    {
+      // add exception
+    }
+  }
+  return file_paths;
 }

@@ -5,7 +5,7 @@
 
 using namespace Resources;
 
-FileManager::FileManager(const std::unordered_map<std::string, std::string> &filenames) : filenames(filenames) {}
+FileManager::FileManager(const std::unordered_map<std::string, std::string> filenames) : filenames(filenames) {}
 
 sf::Font FileManager::getFont() const
 {

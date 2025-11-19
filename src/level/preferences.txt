@@ -1,0 +1,6 @@
+main_font /fonts/main_font.ttf
+level /level.txt
+player /textures/player.png
+obstacle /textures/obstacle.png
+floor /textures/floor.png
+bg /textures/bg.png

@@ -23,8 +23,11 @@ namespace Resources
   const std::string FLOOR_TEXTURE_KEY = "floor";
   const std::string ROOF_TEXTURE_KEY = "roof";
   const std::string BACKGROUND_KEY = "bg";
+  const std::string LEVEL_DATA_PATH = "../src/level";
+  const std::string PREFERENCES_PATH = LEVEL_DATA_PATH + "/preferences.txt";
+  const std::string ASSETS_PATH = LEVEL_DATA_PATH + "/assets";
 
-  const std::unordered_map<std::string, std::string> &getDefaultFilenames();
+  const std::unordered_map<std::string, std::string> getDefaultFilenames();
 };
 
 namespace DefaultParameters
