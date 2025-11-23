@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(RhytmGame)
+project(WINterArc)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -14,7 +14,7 @@ FetchContent_Declare(SFML
 
 FetchContent_MakeAvailable(SFML)
 
-add_executable(game
+add_executable(winterarc
     src/main.cpp
     src/core/Game.cpp
     src/entities/Player.cpp
@@ -28,6 +28,6 @@ add_executable(game
     src/utils/Utils.cpp
 )
 
-target_compile_features(game PRIVATE cxx_std_20)
+target_compile_features(winterarc PRIVATE cxx_std_20)
 add_compile_options(-g)
-target_link_libraries(game PRIVATE SFML::Graphics SFML::Window SFML::Audio SFML::System)
+target_link_libraries(winterarc PRIVATE SFML::Graphics SFML::Window SFML::Audio SFML::System)

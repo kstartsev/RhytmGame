@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 #include "Scene.hpp"
 #include "Context.hpp"
@@ -13,18 +14,18 @@
 class FileManager
 {
 private:
-  short level_speed;
   sf::Font main_font;
   std::ifstream level_file;
-  const std::unordered_map<std::string, std::string> filenames;
+  const std::unordered_map<std::string, std::string> files_paths;
   std::unordered_map<std::string, std::shared_ptr<sf::Texture>> textures;
+  sf::Music level_music;
+
 
 public:
-  explicit FileManager(const std::unordered_map<std::string, std::string> filenames);
+  explicit FileManager(const std::unordered_map<std::string, std::string> files_paths);
   ~FileManager() = default;
 
   bool openFiles();
-  bool createContext(Context &context);
-  bool createScene(Scene &scene, double pixels_per_second, double duration);
+  bool buildGame(Context &context, Scene &scene);
   sf::Font getFont() const;
 };

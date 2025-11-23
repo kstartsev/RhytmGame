@@ -5,7 +5,7 @@
 
 float Utils::beatsToPixels(double beats, short speed)
 {
-  return (beats / DefaultParameters::BEATS_PER_SCREEN) * DefaultParameters::WINDOW_WIDTH * speed;
+  return (beats / DefaultParameters::BEATS_PER_SCREEN) * DefaultParameters::WINDOW_WIDTH * speed * 4 - 1;
 }
 
 bool Utils::checkCollision(const sf::FloatRect &a, const sf::FloatRect &b)
@@ -25,7 +25,7 @@ sf::Text Utils::createText(sf::Font font, std::string text, int size, sf::Color 
   return result;
 }
 
-const std::unordered_map<std::string, std::string> Resources::getDefaultFilenames()
+const std::unordered_map<std::string, std::string> Resources::getFilepaths()
 {
   // static const std::unordered_map<std::string, std::string> file_paths =
   //     {
@@ -45,7 +45,6 @@ const std::unordered_map<std::string, std::string> Resources::getDefaultFilename
   preferences_file.open(PREFERENCES_PATH);
   if (!preferences_file.is_open())
   {
-    std::cout << "jopa" << std::endl;
     // add exception
   }
   while (std::getline(preferences_file, assets_parameters))

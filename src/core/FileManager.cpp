@@ -5,7 +5,7 @@
 
 using namespace Resources;
 
-FileManager::FileManager(const std::unordered_map<std::string, std::string> filenames) : filenames(filenames) {}
+FileManager::FileManager(const std::unordered_map<std::string, std::string> files_paths) : files_paths(files_paths) {}
 
 sf::Font FileManager::getFont() const
 {
@@ -15,14 +15,14 @@ sf::Font FileManager::getFont() const
 bool FileManager::openFiles()
 {
   /// load font
-  if (!main_font.openFromFile(filenames.at(MAIN_FONT_KEY)))
+  if (!main_font.openFromFile(files_paths.at(MAIN_FONT_KEY)))
   {
     std::cerr << "failed to load main_font.ttf" << std::endl;
     return false;
   }
 
   /// load level
-  level_file.open(filenames.at(LEVEL_KEY));
+  level_file.open(files_paths.at(LEVEL_KEY));
   if (!level_file.is_open())
   {
     std::cerr << "failed to load level.txt" << std::endl;
@@ -31,7 +31,7 @@ bool FileManager::openFiles()
 
   /// load textures
   auto player_texture = std::make_shared<sf::Texture>();
-  if (!player_texture->loadFromFile(filenames.at(PLAYER_TEXTURE_KEY)))
+  if (!player_texture->loadFromFile(files_paths.at(PLAYER_TEXTURE_KEY)))
   {
     std::cerr << "failed to load player.png" << std::endl;
     return false;
@@ -40,7 +40,7 @@ bool FileManager::openFiles()
   textures[PLAYER_TEXTURE_KEY] = player_texture;
 
   auto obstacle_texture = std::make_shared<sf::Texture>();
-  if (!obstacle_texture->loadFromFile(filenames.at(OBSTACLE_TEXTURE_KEY)))
+  if (!obstacle_texture->loadFromFile(files_paths.at(OBSTACLE_TEXTURE_KEY)))
   {
     std::cerr << "failed to load obstacle.png" << std::endl;
     return false;
@@ -49,7 +49,7 @@ bool FileManager::openFiles()
   textures[OBSTACLE_TEXTURE_KEY] = obstacle_texture;
 
   auto floor_texture = std::make_shared<sf::Texture>();
-  if (!floor_texture->loadFromFile(filenames.at(FLOOR_TEXTURE_KEY)))
+  if (!floor_texture->loadFromFile(files_paths.at(FLOOR_TEXTURE_KEY)))
   {
     std::cerr << "failed to load floor.png" << std::endl;
     return false;
@@ -58,7 +58,7 @@ bool FileManager::openFiles()
   textures[FLOOR_TEXTURE_KEY] = floor_texture;
 
   auto bg_texture = std::make_shared<sf::Texture>();
-  if (!bg_texture->loadFromFile(filenames.at(BACKGROUND_KEY)))
+  if (!bg_texture->loadFromFile(files_paths.at(BACKGROUND_KEY)))
   {
     std::cerr << "failed to load bg.png" << std::endl;
     return false;
@@ -69,9 +69,11 @@ bool FileManager::openFiles()
   return true;
 }
 
-bool FileManager::createContext(Context &context)
+bool FileManager::buildGame(Context &context, Scene &scene)
 {
+  openFiles();
   std::string parameters_line;
+
   if (!std::getline(level_file, parameters_line))
   {
     std::cerr << "Failed to read level parameters" << std::endl;
@@ -81,6 +83,7 @@ bool FileManager::createContext(Context &context)
   std::istringstream parameters_stream(parameters_line);
   double duration;
   int bpm;
+  short level_speed;
 
   if (!(parameters_stream >> duration >> bpm >> level_speed))
   {
@@ -88,12 +91,9 @@ bool FileManager::createContext(Context &context)
     return false;
   }
   context = Context(duration, bpm, level_speed);
-  return true;
-}
 
-bool FileManager::createScene(Scene &scene, double pixels_per_second, double duration)
-{
-  std::string parameters_line;
+  double pixels_per_second = context.getPixelsPerSecond();
+  scene.setPlayerSpeed(level_speed);
   /// player texture set
   auto player_texture = textures[PLAYER_TEXTURE_KEY];
   if (player_texture)
@@ -110,7 +110,7 @@ bool FileManager::createScene(Scene &scene, double pixels_per_second, double dur
   auto floor_texture = textures[FLOOR_TEXTURE_KEY];
   if (floor_texture)
   {
-    scene.addBorders(floor_texture, pixels_per_second, level_speed);
+    scene.addBorders(floor_texture, pixels_per_second);
   }
 
   while (std::getline(level_file, parameters_line))

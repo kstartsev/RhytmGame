@@ -24,7 +24,7 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build (Debug or Release)
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -83,8 +83,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/pkgRedirects
@@ -237,7 +237,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=RhytmGame
+CMAKE_PROJECT_NAME:STATIC=WINterArc
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=
@@ -477,15 +477,6 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 
 //Value Computed by CMake
-RhytmGame_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build
-
-//Value Computed by CMake
-RhytmGame_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-RhytmGame_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3
-
-//Value Computed by CMake
 SFML_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-build
 
 //ON to build SFML's Audio module.
@@ -541,6 +532,15 @@ SFML_USE_SYSTEM_DEPS:BOOL=OFF
 
 //Treat compiler warnings as errors
 SFML_WARNINGS_AS_ERRORS:BOOL=OFF
+
+//Value Computed by CMake
+WINterArc_BINARY_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3/build
+
+//Value Computed by CMake
+WINterArc_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+WINterArc_SOURCE_DIR:STATIC=/Users/kirillstarcev/всякое/coding/ооп/lab3
 
 //Use any assembly optimization routines
 WITH_ASM:BOOL=ON
@@ -649,6 +649,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.

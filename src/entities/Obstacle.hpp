@@ -24,4 +24,5 @@ public:
   void update(float dt) override;
   sf::FloatRect getHitbox() const override;
   void move(float pixels);
+  double getPos() const;
 };

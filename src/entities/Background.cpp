@@ -5,7 +5,7 @@ using namespace EntitiesParameters;
 
 Background::Background(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed) : Entity({0.f, 0.f}, texture_ptr)
 {
-  shift_per_second = static_cast<float>(pixels_per_second * speed * 0.1f);
+  shift_per_second = static_cast<float>(pixels_per_second * speed * 0.02f);
   sprite1.setSize({BACKGROUND_WIDTH, BACKGROUND_HEIGHT});
   sprite1.setPosition({0.f, ROOF_BOTTOM});
   sprite1.setTexture(texture_ptr.get());

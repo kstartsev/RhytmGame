@@ -58,3 +58,8 @@ void Obstacle::update(float dt)
 {
   move(-dt * pixels_per_second);
 }
+
+double Obstacle::getPos() const
+{
+  return beat_pos;
+}

@@ -6,7 +6,7 @@ C_DEFINES = -DFT2_BUILD_LIBRARY
 
 C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/freetype-build/include/freetype/config
 
-C_FLAGSarm64 = -g -arch arm64 -fvisibility=hidden
+C_FLAGSarm64 =  -arch arm64 -fvisibility=hidden
 
-C_FLAGS = -g -arch arm64 -fvisibility=hidden
+C_FLAGS =  -arch arm64 -fvisibility=hidden
 

@@ -13,7 +13,7 @@ private:
   sf::RectangleShape top2;
 
 public:
-  Borders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed);
+  Borders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second);
   ~Borders() noexcept override = default;
 
   void reset() override;

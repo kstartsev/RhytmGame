@@ -9,7 +9,7 @@
 
 #include "Game.hpp"
 
-Game::Game(sf::RenderWindow &window) : window(window), events(window), assets(Resources::getDefaultFilenames()), scene(events) {}
+Game::Game(sf::RenderWindow &window) : window(window), events(window), assets(Resources::getFilepaths()), scene(events) {}
 
 void Game::run()
 {
@@ -29,7 +29,7 @@ void Game::run()
 
     context.updateDeltaTime();
     scene.update(context.getDeltaTime());
-    if (scene.checkCollisions())
+    if (scene.checkCollisions(context.getCurrentBeats()))
       loss();
 
     window.clear(sf::Color::Black);
@@ -123,11 +123,7 @@ void Game::restart()
 
 void Game::load()
 {
-  if (!assets.openFiles())
-    exit();
-  if (!assets.createContext(context))
-    exit();
-  if (!assets.createScene(scene, context.getPixelsPerSecond(), context.getAudioDuration()))
+  if (!assets.buildGame(context, scene))
     exit();
   context.startTimers();
 }

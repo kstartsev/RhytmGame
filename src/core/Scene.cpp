@@ -24,14 +24,20 @@ void Scene::reset()
   }
 }
 
+void Scene::setPlayerSpeed(short speed)
+{
+  player.setSpeed(speed);
+}
+
 void Scene::addObstacle(std::shared_ptr<sf::Texture> texture_ptr, float pos, PositionState state, double pixels_per_second, short speed)
 {
   obstacles.push_back(Obstacle(pos, texture_ptr, state, pixels_per_second, speed));
+  obstacles_count++;
 }
 
-void Scene::addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed)
+void Scene::addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second)
 {
-  decorations.push_back(std::make_unique<Borders>(texture_ptr, pixels_per_second, speed));
+  decorations.push_back(std::make_unique<Borders>(texture_ptr, pixels_per_second));
 }
 
 void Scene::addBackground(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed)
@@ -44,7 +50,7 @@ void Scene::setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr)
   player.setTexture(texture_ptr);
 }
 
-bool Scene::checkCollisions() const
+bool Scene::checkCollisions(double beat)
 {
   for (auto &obstacle : obstacles)
   {
@@ -52,6 +58,7 @@ bool Scene::checkCollisions() const
     {
       return true;
     }
+    if(obstacle.getPos() > beat + 1) break;
   }
   return false;
 }

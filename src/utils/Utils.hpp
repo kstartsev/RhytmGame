@@ -27,7 +27,7 @@ namespace Resources
   const std::string PREFERENCES_PATH = LEVEL_DATA_PATH + "/preferences.txt";
   const std::string ASSETS_PATH = LEVEL_DATA_PATH + "/assets";
 
-  const std::unordered_map<std::string, std::string> getDefaultFilenames();
+  const std::unordered_map<std::string, std::string> getFilepaths();
 };
 
 namespace DefaultParameters
@@ -50,8 +50,11 @@ namespace EntitiesParameters
   // player
   constexpr sf::Vector2f DEFAULT_PLAYER_POS{250.f, 650.f};
   constexpr sf::Vector2f DEFAULT_PLAYER_SIZE{100.f, 100.f};
-  constexpr sf::Vector2f PLAYER_UP_SHIFT{0.f, -500.f};
-  constexpr sf::Vector2f PLAYER_DOWN_SHIFT{0.f, 500.f};
+  constexpr sf::Vector2f PLAYER_UP_SHIFT{0.f, -400.f};
+  constexpr sf::Vector2f PLAYER_DOWN_SHIFT{0.f, 400.f};
+  constexpr float TIME_FOR_ANIMATION_FRAME = 0.05f;
+  constexpr float TIME_FOR_JUMP_FRAME = 0.03f;
+  constexpr short JUMP_FRAMES_COUNT = 5;
 
   // floor/roof
   constexpr float ROOF_BOTTOM = 150.f;

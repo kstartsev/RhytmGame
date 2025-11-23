@@ -1,4 +1,4 @@
-/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/game.dir
+/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/winterarc.dir
 /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/package.dir
 /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/package_source.dir
 /Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles/edit_cache.dir

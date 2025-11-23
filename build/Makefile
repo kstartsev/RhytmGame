@@ -182,17 +182,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named game
+# Target rules for targets named winterarc
 
 # Build rule for target.
-game: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
-.PHONY : game
+winterarc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 winterarc
+.PHONY : winterarc
 
 # fast build rule for target.
-game/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-.PHONY : game/fast
+winterarc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/build
+.PHONY : winterarc/fast
 
 #=============================================================================
 # Target rules for targets named sfml-system
@@ -355,7 +355,7 @@ src/core/Context.o: src/core/Context.cpp.o
 
 # target to build an object file
 src/core/Context.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Context.cpp.o
 .PHONY : src/core/Context.cpp.o
 
 src/core/Context.i: src/core/Context.cpp.i
@@ -363,7 +363,7 @@ src/core/Context.i: src/core/Context.cpp.i
 
 # target to preprocess a source file
 src/core/Context.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Context.cpp.i
 .PHONY : src/core/Context.cpp.i
 
 src/core/Context.s: src/core/Context.cpp.s
@@ -371,7 +371,7 @@ src/core/Context.s: src/core/Context.cpp.s
 
 # target to generate assembly for a file
 src/core/Context.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Context.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Context.cpp.s
 .PHONY : src/core/Context.cpp.s
 
 src/core/EventManager.o: src/core/EventManager.cpp.o
@@ -379,7 +379,7 @@ src/core/EventManager.o: src/core/EventManager.cpp.o
 
 # target to build an object file
 src/core/EventManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o
 .PHONY : src/core/EventManager.cpp.o
 
 src/core/EventManager.i: src/core/EventManager.cpp.i
@@ -387,7 +387,7 @@ src/core/EventManager.i: src/core/EventManager.cpp.i
 
 # target to preprocess a source file
 src/core/EventManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/EventManager.cpp.i
 .PHONY : src/core/EventManager.cpp.i
 
 src/core/EventManager.s: src/core/EventManager.cpp.s
@@ -395,7 +395,7 @@ src/core/EventManager.s: src/core/EventManager.cpp.s
 
 # target to generate assembly for a file
 src/core/EventManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/EventManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/EventManager.cpp.s
 .PHONY : src/core/EventManager.cpp.s
 
 src/core/FileManager.o: src/core/FileManager.cpp.o
@@ -403,7 +403,7 @@ src/core/FileManager.o: src/core/FileManager.cpp.o
 
 # target to build an object file
 src/core/FileManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o
 .PHONY : src/core/FileManager.cpp.o
 
 src/core/FileManager.i: src/core/FileManager.cpp.i
@@ -411,7 +411,7 @@ src/core/FileManager.i: src/core/FileManager.cpp.i
 
 # target to preprocess a source file
 src/core/FileManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/FileManager.cpp.i
 .PHONY : src/core/FileManager.cpp.i
 
 src/core/FileManager.s: src/core/FileManager.cpp.s
@@ -419,7 +419,7 @@ src/core/FileManager.s: src/core/FileManager.cpp.s
 
 # target to generate assembly for a file
 src/core/FileManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/FileManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/FileManager.cpp.s
 .PHONY : src/core/FileManager.cpp.s
 
 src/core/Game.o: src/core/Game.cpp.o
@@ -427,7 +427,7 @@ src/core/Game.o: src/core/Game.cpp.o
 
 # target to build an object file
 src/core/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Game.cpp.o
 .PHONY : src/core/Game.cpp.o
 
 src/core/Game.i: src/core/Game.cpp.i
@@ -435,7 +435,7 @@ src/core/Game.i: src/core/Game.cpp.i
 
 # target to preprocess a source file
 src/core/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Game.cpp.i
 .PHONY : src/core/Game.cpp.i
 
 src/core/Game.s: src/core/Game.cpp.s
@@ -443,7 +443,7 @@ src/core/Game.s: src/core/Game.cpp.s
 
 # target to generate assembly for a file
 src/core/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Game.cpp.s
 .PHONY : src/core/Game.cpp.s
 
 src/core/Scene.o: src/core/Scene.cpp.o
@@ -451,7 +451,7 @@ src/core/Scene.o: src/core/Scene.cpp.o
 
 # target to build an object file
 src/core/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Scene.cpp.o
 .PHONY : src/core/Scene.cpp.o
 
 src/core/Scene.i: src/core/Scene.cpp.i
@@ -459,7 +459,7 @@ src/core/Scene.i: src/core/Scene.cpp.i
 
 # target to preprocess a source file
 src/core/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Scene.cpp.i
 .PHONY : src/core/Scene.cpp.i
 
 src/core/Scene.s: src/core/Scene.cpp.s
@@ -467,7 +467,7 @@ src/core/Scene.s: src/core/Scene.cpp.s
 
 # target to generate assembly for a file
 src/core/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/core/Scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/Scene.cpp.s
 .PHONY : src/core/Scene.cpp.s
 
 src/entities/Background.o: src/entities/Background.cpp.o
@@ -475,7 +475,7 @@ src/entities/Background.o: src/entities/Background.cpp.o
 
 # target to build an object file
 src/entities/Background.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Background.cpp.o
 .PHONY : src/entities/Background.cpp.o
 
 src/entities/Background.i: src/entities/Background.cpp.i
@@ -483,7 +483,7 @@ src/entities/Background.i: src/entities/Background.cpp.i
 
 # target to preprocess a source file
 src/entities/Background.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Background.cpp.i
 .PHONY : src/entities/Background.cpp.i
 
 src/entities/Background.s: src/entities/Background.cpp.s
@@ -491,7 +491,7 @@ src/entities/Background.s: src/entities/Background.cpp.s
 
 # target to generate assembly for a file
 src/entities/Background.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Background.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Background.cpp.s
 .PHONY : src/entities/Background.cpp.s
 
 src/entities/Borders.o: src/entities/Borders.cpp.o
@@ -499,7 +499,7 @@ src/entities/Borders.o: src/entities/Borders.cpp.o
 
 # target to build an object file
 src/entities/Borders.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Borders.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Borders.cpp.o
 .PHONY : src/entities/Borders.cpp.o
 
 src/entities/Borders.i: src/entities/Borders.cpp.i
@@ -507,7 +507,7 @@ src/entities/Borders.i: src/entities/Borders.cpp.i
 
 # target to preprocess a source file
 src/entities/Borders.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Borders.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Borders.cpp.i
 .PHONY : src/entities/Borders.cpp.i
 
 src/entities/Borders.s: src/entities/Borders.cpp.s
@@ -515,7 +515,7 @@ src/entities/Borders.s: src/entities/Borders.cpp.s
 
 # target to generate assembly for a file
 src/entities/Borders.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Borders.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Borders.cpp.s
 .PHONY : src/entities/Borders.cpp.s
 
 src/entities/Obstacle.o: src/entities/Obstacle.cpp.o
@@ -523,7 +523,7 @@ src/entities/Obstacle.o: src/entities/Obstacle.cpp.o
 
 # target to build an object file
 src/entities/Obstacle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.o
 .PHONY : src/entities/Obstacle.cpp.o
 
 src/entities/Obstacle.i: src/entities/Obstacle.cpp.i
@@ -531,7 +531,7 @@ src/entities/Obstacle.i: src/entities/Obstacle.cpp.i
 
 # target to preprocess a source file
 src/entities/Obstacle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.i
 .PHONY : src/entities/Obstacle.cpp.i
 
 src/entities/Obstacle.s: src/entities/Obstacle.cpp.s
@@ -539,7 +539,7 @@ src/entities/Obstacle.s: src/entities/Obstacle.cpp.s
 
 # target to generate assembly for a file
 src/entities/Obstacle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Obstacle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.s
 .PHONY : src/entities/Obstacle.cpp.s
 
 src/entities/Player.o: src/entities/Player.cpp.o
@@ -547,7 +547,7 @@ src/entities/Player.o: src/entities/Player.cpp.o
 
 # target to build an object file
 src/entities/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Player.cpp.o
 .PHONY : src/entities/Player.cpp.o
 
 src/entities/Player.i: src/entities/Player.cpp.i
@@ -555,7 +555,7 @@ src/entities/Player.i: src/entities/Player.cpp.i
 
 # target to preprocess a source file
 src/entities/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Player.cpp.i
 .PHONY : src/entities/Player.cpp.i
 
 src/entities/Player.s: src/entities/Player.cpp.s
@@ -563,7 +563,7 @@ src/entities/Player.s: src/entities/Player.cpp.s
 
 # target to generate assembly for a file
 src/entities/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/entities/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Player.cpp.s
 .PHONY : src/entities/Player.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -571,7 +571,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -579,7 +579,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -587,7 +587,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/utils/Utils.o: src/utils/Utils.cpp.o
@@ -595,7 +595,7 @@ src/utils/Utils.o: src/utils/Utils.cpp.o
 
 # target to build an object file
 src/utils/Utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o
 .PHONY : src/utils/Utils.cpp.o
 
 src/utils/Utils.i: src/utils/Utils.cpp.i
@@ -603,7 +603,7 @@ src/utils/Utils.i: src/utils/Utils.cpp.i
 
 # target to preprocess a source file
 src/utils/Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/utils/Utils.cpp.i
 .PHONY : src/utils/Utils.cpp.i
 
 src/utils/Utils.s: src/utils/Utils.cpp.s
@@ -611,7 +611,7 @@ src/utils/Utils.s: src/utils/Utils.cpp.s
 
 # target to generate assembly for a file
 src/utils/Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/utils/Utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/utils/Utils.cpp.s
 .PHONY : src/utils/Utils.cpp.s
 
 # Help Target
@@ -631,7 +631,6 @@ help:
 	@echo "... FLAC"
 	@echo "... benchmark_residual"
 	@echo "... freetype"
-	@echo "... game"
 	@echo "... ogg"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
@@ -641,6 +640,7 @@ help:
 	@echo "... vorbis"
 	@echo "... vorbisenc"
 	@echo "... vorbisfile"
+	@echo "... winterarc"
 	@echo "... src/core/Context.o"
 	@echo "... src/core/Context.i"
 	@echo "... src/core/Context.s"

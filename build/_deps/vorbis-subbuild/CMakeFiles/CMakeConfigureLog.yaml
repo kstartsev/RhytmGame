@@ -21,6 +21,9 @@ events:
       - "uname"
     candidate_directories:
       - "/usr/local/opt/llvm/bin/"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Frameworks/Python.framework/Versions/3.14/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -33,9 +36,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/local/opt/llvm/bin/uname"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.14/bin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -44,6 +49,10 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/opt/llvm/bin"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -56,8 +65,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
-        - "/usr/local/opt/llvm/bin"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/usr/local/opt/llvm/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -86,6 +97,9 @@ events:
       - "install_name_tool"
     candidate_directories:
       - "/usr/local/opt/llvm/bin/"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Frameworks/Python.framework/Versions/3.14/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -98,9 +112,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/local/opt/llvm/bin/install_name_tool"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
+      - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
+      - "/Library/Frameworks/Python.framework/Versions/3.14/bin/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -109,6 +125,10 @@ events:
     search_context:
       ENV{PATH}:
         - "/usr/local/opt/llvm/bin"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -121,7 +141,9 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
-        - "/usr/local/opt/llvm/bin"
+        - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/kirillstarcev/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/usr/local/opt/llvm/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.14/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...

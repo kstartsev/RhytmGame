@@ -6,7 +6,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-src/include -I/Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/ogg-build/include
 
-C_FLAGSarm64 = -g -arch arm64
+C_FLAGSarm64 =  -arch arm64
 
-C_FLAGS = -g -arch arm64
+C_FLAGS =  -arch arm64
 

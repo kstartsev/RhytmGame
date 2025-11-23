@@ -9,7 +9,7 @@ Context::Context(double duration, int bpm, short speed)
 {
   clock.stop();
   delta_clock.stop();
-  time_per_beat = 60 / bpm;
+  time_per_beat = 60.f / bpm;
   pixels_per_second = (WINDOW_WIDTH / (time_per_beat * BEATS_PER_SCREEN)) * speed;
 }
 
