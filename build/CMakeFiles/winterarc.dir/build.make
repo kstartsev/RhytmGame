@@ -156,10 +156,38 @@ CMakeFiles/winterarc.dir/src/entities/Background.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/winterarc.dir/src/entities/Background.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Background.cpp -o CMakeFiles/winterarc.dir/src/entities/Background.cpp.s
 
+CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o: CMakeFiles/winterarc.dir/flags.make
+CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/PercentBar.cpp
+CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o -MF CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o.d -o CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/PercentBar.cpp
+
+CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/PercentBar.cpp > CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.i
+
+CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/PercentBar.cpp -o CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.s
+
+CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o: CMakeFiles/winterarc.dir/flags.make
+CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Shroom.cpp
+CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o -MF CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o.d -o CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Shroom.cpp
+
+CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Shroom.cpp > CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.i
+
+CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Shroom.cpp -o CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.s
+
 CMakeFiles/winterarc.dir/src/core/Context.cpp.o: CMakeFiles/winterarc.dir/flags.make
 CMakeFiles/winterarc.dir/src/core/Context.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp
 CMakeFiles/winterarc.dir/src/core/Context.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/winterarc.dir/src/core/Context.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/winterarc.dir/src/core/Context.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/core/Context.cpp.o -MF CMakeFiles/winterarc.dir/src/core/Context.cpp.o.d -o CMakeFiles/winterarc.dir/src/core/Context.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp
 
 CMakeFiles/winterarc.dir/src/core/Context.cpp.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/winterarc.dir/src/core/Context.cpp.s: cmake_force
 CMakeFiles/winterarc.dir/src/core/Scene.cpp.o: CMakeFiles/winterarc.dir/flags.make
 CMakeFiles/winterarc.dir/src/core/Scene.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.cpp
 CMakeFiles/winterarc.dir/src/core/Scene.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/winterarc.dir/src/core/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/winterarc.dir/src/core/Scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/core/Scene.cpp.o -MF CMakeFiles/winterarc.dir/src/core/Scene.cpp.o.d -o CMakeFiles/winterarc.dir/src/core/Scene.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.cpp
 
 CMakeFiles/winterarc.dir/src/core/Scene.cpp.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/winterarc.dir/src/core/Scene.cpp.s: cmake_force
 CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o: CMakeFiles/winterarc.dir/flags.make
 CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.cpp
 CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o -MF CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o.d -o CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.cpp
 
 CMakeFiles/winterarc.dir/src/core/EventManager.cpp.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/winterarc.dir/src/core/EventManager.cpp.s: cmake_force
 CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o: CMakeFiles/winterarc.dir/flags.make
 CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp
 CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o -MF CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o.d -o CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp
 
 CMakeFiles/winterarc.dir/src/core/FileManager.cpp.i: cmake_force
@@ -212,10 +240,24 @@ CMakeFiles/winterarc.dir/src/core/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/winterarc.dir/src/core/FileManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp -o CMakeFiles/winterarc.dir/src/core/FileManager.cpp.s
 
+CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o: CMakeFiles/winterarc.dir/flags.make
+CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.cpp
+CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o -MF CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o.d -o CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.cpp
+
+CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.cpp > CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.i
+
+CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.cpp -o CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.s
+
 CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o: CMakeFiles/winterarc.dir/flags.make
 CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o: /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
 CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o: CMakeFiles/winterarc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o -MF CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o.d -o CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o -c /Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp
 
 CMakeFiles/winterarc.dir/src/utils/Utils.cpp.i: cmake_force
@@ -234,10 +276,13 @@ winterarc_OBJECTS = \
 "CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.o" \
 "CMakeFiles/winterarc.dir/src/entities/Borders.cpp.o" \
 "CMakeFiles/winterarc.dir/src/entities/Background.cpp.o" \
+"CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o" \
+"CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o" \
 "CMakeFiles/winterarc.dir/src/core/Context.cpp.o" \
 "CMakeFiles/winterarc.dir/src/core/Scene.cpp.o" \
 "CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o" \
 "CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o" \
+"CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o" \
 "CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o"
 
 # External object files for target winterarc
@@ -249,25 +294,28 @@ bin/winterarc: CMakeFiles/winterarc.dir/src/entities/Player.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/entities/Borders.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/entities/Background.cpp.o
+bin/winterarc: CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o
+bin/winterarc: CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/core/Context.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/core/Scene.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o
+bin/winterarc: CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o
 bin/winterarc: CMakeFiles/winterarc.dir/build.make
-bin/winterarc: _deps/sfml-build/lib/libsfml-graphics.a
-bin/winterarc: _deps/sfml-build/lib/libsfml-window.a
-bin/winterarc: _deps/sfml-build/lib/libsfml-audio.a
-bin/winterarc: _deps/sfml-build/lib/libsfml-system.a
+bin/winterarc: _deps/sfml-build/lib/libsfml-graphics-s-d.a
+bin/winterarc: _deps/sfml-build/lib/libsfml-window-s-d.a
+bin/winterarc: _deps/sfml-build/lib/libsfml-audio-s-d.a
+bin/winterarc: _deps/sfml-build/lib/libsfml-system-s-d.a
 bin/winterarc: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
-bin/winterarc: _deps/sfml-build/lib/libfreetype.a
-bin/winterarc: _deps/sfml-build/lib/libvorbisfile.a
-bin/winterarc: _deps/sfml-build/lib/libvorbisenc.a
-bin/winterarc: _deps/sfml-build/lib/libvorbis.a
-bin/winterarc: _deps/sfml-build/lib/libFLAC.a
-bin/winterarc: _deps/sfml-build/lib/libogg.a
+bin/winterarc: _deps/sfml-build/lib/libfreetyped.a
+bin/winterarc: _deps/sfml-build/lib/libvorbisfiled.a
+bin/winterarc: _deps/sfml-build/lib/libvorbisencd.a
+bin/winterarc: _deps/sfml-build/lib/libvorbisd.a
+bin/winterarc: _deps/sfml-build/lib/libFLACd.a
+bin/winterarc: _deps/sfml-build/lib/liboggd.a
 bin/winterarc: CMakeFiles/winterarc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/winterarc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kirillstarcev/всякое/coding/ооп/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable bin/winterarc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/winterarc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

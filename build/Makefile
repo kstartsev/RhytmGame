@@ -350,6 +350,30 @@ vorbisfile/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
 .PHONY : vorbisfile/fast
 
+src/core/AudioManager.o: src/core/AudioManager.cpp.o
+.PHONY : src/core/AudioManager.o
+
+# target to build an object file
+src/core/AudioManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o
+.PHONY : src/core/AudioManager.cpp.o
+
+src/core/AudioManager.i: src/core/AudioManager.cpp.i
+.PHONY : src/core/AudioManager.i
+
+# target to preprocess a source file
+src/core/AudioManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.i
+.PHONY : src/core/AudioManager.cpp.i
+
+src/core/AudioManager.s: src/core/AudioManager.cpp.s
+.PHONY : src/core/AudioManager.s
+
+# target to generate assembly for a file
+src/core/AudioManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.s
+.PHONY : src/core/AudioManager.cpp.s
+
 src/core/Context.o: src/core/Context.cpp.o
 .PHONY : src/core/Context.o
 
@@ -542,6 +566,30 @@ src/entities/Obstacle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.s
 .PHONY : src/entities/Obstacle.cpp.s
 
+src/entities/PercentBar.o: src/entities/PercentBar.cpp.o
+.PHONY : src/entities/PercentBar.o
+
+# target to build an object file
+src/entities/PercentBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o
+.PHONY : src/entities/PercentBar.cpp.o
+
+src/entities/PercentBar.i: src/entities/PercentBar.cpp.i
+.PHONY : src/entities/PercentBar.i
+
+# target to preprocess a source file
+src/entities/PercentBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.i
+.PHONY : src/entities/PercentBar.cpp.i
+
+src/entities/PercentBar.s: src/entities/PercentBar.cpp.s
+.PHONY : src/entities/PercentBar.s
+
+# target to generate assembly for a file
+src/entities/PercentBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.s
+.PHONY : src/entities/PercentBar.cpp.s
+
 src/entities/Player.o: src/entities/Player.cpp.o
 .PHONY : src/entities/Player.o
 
@@ -565,6 +613,30 @@ src/entities/Player.s: src/entities/Player.cpp.s
 src/entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Player.cpp.s
 .PHONY : src/entities/Player.cpp.s
+
+src/entities/Shroom.o: src/entities/Shroom.cpp.o
+.PHONY : src/entities/Shroom.o
+
+# target to build an object file
+src/entities/Shroom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o
+.PHONY : src/entities/Shroom.cpp.o
+
+src/entities/Shroom.i: src/entities/Shroom.cpp.i
+.PHONY : src/entities/Shroom.i
+
+# target to preprocess a source file
+src/entities/Shroom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.i
+.PHONY : src/entities/Shroom.cpp.i
+
+src/entities/Shroom.s: src/entities/Shroom.cpp.s
+.PHONY : src/entities/Shroom.s
+
+# target to generate assembly for a file
+src/entities/Shroom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/winterarc.dir/build.make CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.s
+.PHONY : src/entities/Shroom.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -641,6 +713,9 @@ help:
 	@echo "... vorbisenc"
 	@echo "... vorbisfile"
 	@echo "... winterarc"
+	@echo "... src/core/AudioManager.o"
+	@echo "... src/core/AudioManager.i"
+	@echo "... src/core/AudioManager.s"
 	@echo "... src/core/Context.o"
 	@echo "... src/core/Context.i"
 	@echo "... src/core/Context.s"
@@ -665,9 +740,15 @@ help:
 	@echo "... src/entities/Obstacle.o"
 	@echo "... src/entities/Obstacle.i"
 	@echo "... src/entities/Obstacle.s"
+	@echo "... src/entities/PercentBar.o"
+	@echo "... src/entities/PercentBar.i"
+	@echo "... src/entities/PercentBar.s"
 	@echo "... src/entities/Player.o"
 	@echo "... src/entities/Player.i"
 	@echo "... src/entities/Player.s"
+	@echo "... src/entities/Shroom.o"
+	@echo "... src/entities/Shroom.i"
+	@echo "... src/entities/Shroom.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

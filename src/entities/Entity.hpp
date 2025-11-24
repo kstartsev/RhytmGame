@@ -34,4 +34,6 @@ public:
   Collidable(sf::Vector2f pos, std::shared_ptr<sf::Texture> texture_ptr, PositionState state) : Entity(pos, texture_ptr), state(state) {};
   virtual ~Collidable() = default;
   virtual sf::FloatRect getHitbox() const = 0;
+  virtual double getPos() const = 0;
+  virtual bool isFatal() = 0;
 };

@@ -7,7 +7,7 @@
 
 using namespace EntitiesParameters;
 
-class Obstacle : Collidable
+class Obstacle : public Collidable
 {
 private:
   sf::VertexArray sprite;
@@ -19,10 +19,12 @@ private:
 
 public:
   Obstacle(float beat, std::shared_ptr<sf::Texture> texture_ptr, PositionState state, double pixels_per_second, short speed, float width = DEFAULT_SPIKE_WIDTH, float height = DEFAULT_SPIKE_HEIGHT);
+  ~Obstacle() noexcept override = default;
   void reset() override;
   void draw(sf::RenderTarget &target) const override;
   void update(float dt) override;
   sf::FloatRect getHitbox() const override;
   void move(float pixels);
-  double getPos() const;
+  double getPos() const override;
+  bool isFatal() override;
 };

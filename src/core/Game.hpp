@@ -5,6 +5,7 @@
 #include "Context.hpp"
 #include "Scene.hpp"
 #include "EventManager.hpp"
+#include "AudioManager.hpp"
 #include "FileManager.hpp"
 
 class Game
@@ -15,6 +16,7 @@ private:
   Context context;
   Scene scene;
   EventManager events;
+  AudioManager audio;
   // sf::Font main_font;
 
 

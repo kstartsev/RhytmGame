@@ -7,7 +7,7 @@ using namespace Resources;
 
 FileManager::FileManager(const std::unordered_map<std::string, std::string> files_paths) : files_paths(files_paths) {}
 
-sf::Font FileManager::getFont() const
+const sf::Font &FileManager::getFont() const
 {
   return main_font;
 }
@@ -66,12 +66,29 @@ bool FileManager::openFiles()
   bg_texture->setSmooth(true);
   textures[BACKGROUND_KEY] = bg_texture;
 
+  auto shroom_texture = std::make_shared<sf::Texture>();
+  if (!shroom_texture->loadFromFile(files_paths.at(SHROOM_TEXTURE_KEY)))
+  {
+    std::cerr << "failed to load mushroom.png" << std::endl;
+    return false;
+  }
+  shroom_texture->setSmooth(true);
+  textures[SHROOM_TEXTURE_KEY] = shroom_texture;
+
+  /// load audio
+  if (!level_music->openFromFile(files_paths.at(LEVEL_MUSIC_KEY)))
+  {
+    std::cerr << "failed to load level_music.mp3" << std::endl;
+    return false;
+  }
+
   return true;
 }
 
-bool FileManager::buildGame(Context &context, Scene &scene)
+bool FileManager::buildGame(Context &context, Scene &scene, AudioManager &audio)
 {
   openFiles();
+  audio.setMusic(level_music);
   std::string parameters_line;
 
   if (!std::getline(level_file, parameters_line))
@@ -104,14 +121,15 @@ bool FileManager::buildGame(Context &context, Scene &scene)
   auto bg_texture = textures[BACKGROUND_KEY];
   if (bg_texture)
   {
-    scene.addBackground(bg_texture, pixels_per_second, level_speed);
+    scene.addDecoration(std::make_unique<Background>(bg_texture, pixels_per_second, level_speed));
   }
   /// borders texture set
   auto floor_texture = textures[FLOOR_TEXTURE_KEY];
   if (floor_texture)
   {
-    scene.addBorders(floor_texture, pixels_per_second);
+    scene.addDecoration(std::make_unique<Borders>(floor_texture, pixels_per_second));
   }
+  scene.addDecoration(std::make_unique<PercentBar>(getFont(), "", duration));
 
   while (std::getline(level_file, parameters_line))
   {
@@ -119,19 +137,38 @@ bool FileManager::buildGame(Context &context, Scene &scene)
     bool is_any_loaded = false;
     float pos = 0;
     char state_char;
+    char mush_char;
     float width = 0;
     float height = 0;
 
     if (parameters_stream >> pos >> state_char && (state_char == 'D' || state_char == 'U'))
     {
-      PositionState state = (state_char == 'D') ? PositionState::Down : PositionState::Up;
-      auto obstacle_texture = textures[OBSTACLE_TEXTURE_KEY];
-      if (obstacle_texture)
+      if (parameters_stream >> mush_char)
       {
-        scene.addObstacle(obstacle_texture, pos, state, pixels_per_second, level_speed);
+        if (mush_char != 'M')
+        {
+          std::cerr << "Invalid obstacle parameters" << std::endl;
+          return false;
+        }
+        PositionState state = (state_char == 'D') ? PositionState::Down : PositionState::Up;
+        auto shroom_texture = textures[SHROOM_TEXTURE_KEY];
+        if (shroom_texture)
+        {
+          scene.addCollidable(std::make_unique<Shroom>(pos - 1, shroom_texture, state, pixels_per_second, level_speed));
+          is_any_loaded = true;
+        }
       }
+      else
+      {
+        PositionState state = (state_char == 'D') ? PositionState::Down : PositionState::Up;
+        auto obstacle_texture = textures[OBSTACLE_TEXTURE_KEY];
+        if (obstacle_texture)
+        {
+          scene.addCollidable(std::make_unique<Obstacle>(pos - 1, obstacle_texture, state, pixels_per_second, level_speed));
+        }
 
-      is_any_loaded = true;
+        is_any_loaded = true;
+      }
     }
     else
     {

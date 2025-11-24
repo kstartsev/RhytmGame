@@ -1094,15 +1094,38 @@ CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o: \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/InputSoundFile.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/Export.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundFileReader.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundChannel.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/Listener.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/Music.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundStream.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundSource.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/AudioResource.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/OutputSoundFile.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundFileWriter.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/PlaybackDevice.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/Sound.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundBuffer.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundRecorder.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundFileFactory.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include/SFML/Audio/SoundFileFactory.inl \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Scene.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Entity.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Player.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Obstacle.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/../utils/Utils.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Shroom.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Borders.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/Background.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../entities/PercentBar.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.hpp \
   /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/../utils/Utils.hpp \
+  /Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/AudioManager.cpp" "CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/core/AudioManager.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/Context.cpp" "CMakeFiles/winterarc.dir/src/core/Context.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/core/Context.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/EventManager.cpp" "CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/core/EventManager.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/core/FileManager.cpp" "CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/core/FileManager.cpp.o.d"
@@ -16,7 +17,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Background.cpp" "CMakeFiles/winterarc.dir/src/entities/Background.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/Background.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Borders.cpp" "CMakeFiles/winterarc.dir/src/entities/Borders.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/Borders.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Obstacle.cpp" "CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/Obstacle.cpp.o.d"
+  "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/PercentBar.cpp" "CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/PercentBar.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Player.cpp" "CMakeFiles/winterarc.dir/src/entities/Player.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/Player.cpp.o.d"
+  "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/entities/Shroom.cpp" "CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/entities/Shroom.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/main.cpp" "CMakeFiles/winterarc.dir/src/main.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/main.cpp.o.d"
   "/Users/kirillstarcev/всякое/coding/ооп/lab3/src/utils/Utils.cpp" "CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o" "gcc" "CMakeFiles/winterarc.dir/src/utils/Utils.cpp.o.d"
   )

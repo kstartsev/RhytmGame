@@ -6,7 +6,7 @@ CXX_DEFINES = -DSFML_STATIC
 
 CXX_INCLUDES = -isystem /Users/kirillstarcev/всякое/coding/ооп/lab3/build/_deps/sfml-src/include
 
-CXX_FLAGSarm64 = -std=gnu++20 -arch arm64
+CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 
-CXX_FLAGS = -std=gnu++20 -arch arm64
+CXX_FLAGS = -g -std=gnu++20 -arch arm64
 

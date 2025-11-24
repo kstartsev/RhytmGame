@@ -29,6 +29,8 @@ public:
   void update(float dt) override;
   void jump();
   sf::FloatRect getHitbox() const override;
+  double getPos() const override;
+  bool isFatal() override;
 };
 
 /**

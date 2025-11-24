@@ -109,3 +109,13 @@ sf::FloatRect Player::getHitbox() const
 {
   return sprite.getGlobalBounds();
 }
+
+double Player::getPos() const
+{
+  return 0;
+}
+
+bool Player::isFatal()
+{
+  return false;
+}

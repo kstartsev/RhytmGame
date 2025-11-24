@@ -15,13 +15,14 @@ void Scene::reset()
 {
   for (auto &obstacle : obstacles)
   {
-    obstacle.reset();
+    obstacle->reset();
   }
   player.reset();
   for (auto &entity : decorations)
   {
     entity->reset();
   }
+  score = 0;
 }
 
 void Scene::setPlayerSpeed(short speed)
@@ -29,20 +30,14 @@ void Scene::setPlayerSpeed(short speed)
   player.setSpeed(speed);
 }
 
-void Scene::addObstacle(std::shared_ptr<sf::Texture> texture_ptr, float pos, PositionState state, double pixels_per_second, short speed)
+void Scene::addCollidable(std::unique_ptr<Collidable> collidable)
 {
-  obstacles.push_back(Obstacle(pos, texture_ptr, state, pixels_per_second, speed));
-  obstacles_count++;
+  obstacles.push_back(std::move(collidable));
 }
 
-void Scene::addBorders(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second)
+void Scene::addDecoration(std::unique_ptr<Entity> entity)
 {
-  decorations.push_back(std::make_unique<Borders>(texture_ptr, pixels_per_second));
-}
-
-void Scene::addBackground(std::shared_ptr<sf::Texture> texture_ptr, double pixels_per_second, short speed)
-{
-  decorations.push_back(std::make_unique<Background>(texture_ptr, pixels_per_second, speed));
+  decorations.push_back(std::move(entity));
 }
 
 void Scene::setPlayerTexture(std::shared_ptr<sf::Texture> texture_ptr)
@@ -54,11 +49,20 @@ bool Scene::checkCollisions(double beat)
 {
   for (auto &obstacle : obstacles)
   {
-    if (Utils::checkCollision(player.getHitbox(), obstacle.getHitbox()))
+    if (Utils::checkCollision(player.getHitbox(), obstacle->getHitbox()))
     {
-      return true;
+      if (obstacle->isFatal())
+      {
+        return true;
+      }
+      else
+      {
+        score++;
+        return false;
+      }
     }
-    if(obstacle.getPos() > beat + 1) break;
+    if (obstacle->getPos() > beat + 1)
+      break;
   }
   return false;
 }
@@ -67,7 +71,7 @@ void Scene::update(float dt)
 {
   for (auto &obstacle : obstacles)
   {
-    obstacle.update(dt);
+    obstacle->update(dt);
   }
 
   player.update(dt);
@@ -89,6 +93,11 @@ void Scene::draw(sf::RenderTarget &target) const
 
   for (auto &obstacle : obstacles)
   {
-    obstacle.draw(target);
+    obstacle->draw(target);
   }
+}
+
+int Scene::getScore() const
+{
+  return score;
 }

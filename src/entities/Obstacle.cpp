@@ -63,3 +63,8 @@ double Obstacle::getPos() const
 {
   return beat_pos;
 }
+
+bool Obstacle::isFatal()
+{
+  return true;
+}

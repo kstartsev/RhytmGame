@@ -9,6 +9,7 @@
 
 #include "Scene.hpp"
 #include "Context.hpp"
+#include "AudioManager.hpp"
 #include "../utils/Utils.hpp"
 
 class FileManager
@@ -18,14 +19,13 @@ private:
   std::ifstream level_file;
   const std::unordered_map<std::string, std::string> files_paths;
   std::unordered_map<std::string, std::shared_ptr<sf::Texture>> textures;
-  sf::Music level_music;
-
+  std::shared_ptr<sf::Music> level_music = std::make_shared<sf::Music>();
 
 public:
   explicit FileManager(const std::unordered_map<std::string, std::string> files_paths);
   ~FileManager() = default;
 
   bool openFiles();
-  bool buildGame(Context &context, Scene &scene);
-  sf::Font getFont() const;
+  bool buildGame(Context &context, Scene &scene, AudioManager &audio);
+  const sf::Font &getFont() const;
 };

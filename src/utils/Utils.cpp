@@ -16,7 +16,7 @@ bool Utils::checkCollision(const sf::FloatRect &a, const sf::FloatRect &b)
          a.position.y + a.size.y > b.position.y;
 }
 
-sf::Text Utils::createText(sf::Font font, std::string text, int size, sf::Color color)
+sf::Text Utils::createText(const sf::Font& font, const std::string& text, int size, sf::Color color)
 {
   sf::Text result{font};
   result.setString(text);

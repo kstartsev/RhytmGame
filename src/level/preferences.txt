@@ -2,6 +2,8 @@ main_font /fonts/main_font.ttf
 level /level.txt
 player /textures/player.png
 obstacle /textures/obstacle.png
+shroom /textures/mushroom.png
 floor /textures/floor.png
 bg /textures/bg.png
+uibg /textures/uibg.png
 level_music /audio/level_music.mp3

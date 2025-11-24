@@ -21,10 +21,13 @@ add_executable(winterarc
     src/entities/Obstacle.cpp
     src/entities/Borders.cpp
     src/entities/Background.cpp
+    src/entities/PercentBar.cpp
+    src/entities/Shroom.cpp
     src/core/Context.cpp
     src/core/Scene.cpp
     src/core/EventManager.cpp
     src/core/FileManager.cpp
+    src/core/AudioManager.cpp
     src/utils/Utils.cpp
 )
 
